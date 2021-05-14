@@ -1,10 +1,8 @@
 {
 	"folders": [
 		{
+			"name": "Gfecito.github.io",
 			"path": "."
-		},
-		{
-			"path": "../Website/Images"
 		}
 	],
 	"settings": {}
