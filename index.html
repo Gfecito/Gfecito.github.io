@@ -2,132 +2,263 @@
 <html>
 
 <head>
+    <title>Welcome</title>
+    <link rel="shortcut icon" type="image/png" href="Images/Logos/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- W3 CSS-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="generalStyle.css">
     <style>
         html,
         body {
             height: 100%;
             margin: 0;
-
+            overflow: hidden;
         }
 
         .parallelogram {
             text-decoration: none;
-            display: inline-block;
+            display: block;
+            box-sizing: border-box;
+            object-fit: contain;
+            position: absolute;
             margin: 0;
             padding: 0;
-            width: 25%;
-            height: 100%;
-            background: #212529;
-            color: white;
+            width: 50%;
+            height: 50%;
+            background: white;
+            color: #212529;
+
+            border-width: 1px;
+            border-color: #212529;
+            border-style: solid;
         }
 
-        .imageContainer {
-            object-fit: contain;
-            margin-top: 60%;
-            margin-left: 10%;
-            height: 40%;
-            width: 80%;
-            overflow: hidden;
-        }
-
-        .textContainer {
-            object-fit: contain;
-            margin-left: 10%;
-            margin-top: 20%;
-            height: 10%;
-            width: 80%;
-            overflow: hidden;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        img {
-            object-fit: contain;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-            max-width: 100%;
-            max-height: 100%;
-        }
 
         #yearsAhead {
-            background: #FFFFFF;
-            color: #212529;
+            left: 0;
+            top: 93px;
+        }
+
+        #CV {
+            left: 0;
+            bottom: -46.5px;
         }
 
         #Projects {
-            background-color: #15B097;
-            color: #89023E;
+            right: 0;
+            top: 93px;
         }
 
-
-        #triangle-up {
-            z-index: 1;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            margin-left: -12.5vh;
-            width: 0;
-            height: 0;
-            border-left: 12.5vh solid transparent;
-            border-right: 12.5vh solid transparent;
-            border-bottom: 25vh solid white;
+        #Tutoring {
+            right: 0;
+            bottom: -46.5px;
         }
 
-        #triangleContained{
-            z-index: 2;
-            position: absolute;
-            bottom: 3vh;
-            left: 50%;
-            margin-left: -12.5vh;
-
-            text-decoration: none;
-            width: 25vh;
-            font-size: 3vh;
+        .textContainer {
+            position: relative;
+            top: 2vw;
+            display: flexbox;
+            object-fit: contain;
+            overflow: hidden;
             text-align: center;
             font-weight: bold;
-            color:#212529;
+            font-size: 10vw;
         }
 
+        .textContainer>p {
+            position: relative;
+            top: 2vw;
+            display: flexbox;
+            object-fit: contain;
+            overflow: hidden;
+            text-align: center;
+            font-weight: bold;
+            font-size: 3vw;
+        }
+
+        #yearsAhead>.textContainer {
+            left: 0;
+            bottom: 10vw;
+        }
+
+        #Projects>.textContainer {
+            right: 0;
+            bottom: 10vw;
+        }
+
+        #CV>.textContainer {
+            left: 0;
+            top: 80px;
+        }
+
+        #Tutoring>.textContainer {
+            right: 0;
+            top: 80px;
+        }
+
+
+        .parallelogram:hover {
+            z-index: 2;
+            width: 55%;
+            color: white;
+            background-color: #212529;
+        }
+
+        .parallelogram:hover>.textContainer {
+            font-size: 11vw;
+        }
+
+
+        #bigCircle {
+            z-index: 1;
+            width: 23vw;
+            height: 23vw;
+            background: #2B2F34;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 45%;
+            left: 50%;
+            margin-left: -11.5vw;
+            margin-bottom: -11.5vw;
+            border-width: 1px;
+            border-color: #2B2F34;
+            border-style: solid;
+        }
+
+        #circle {
+            text-decoration: none;
+            width: 22vw;
+            height: 22vw;
+            background: #2B2F34;
+            border-radius: 50%;
+            z-index: 3;
+            position: absolute;
+            bottom: 45%;
+            left: 50%;
+            margin-left: -11vw;
+            margin-bottom: -11vw;
+        }
+
+
+        #circleText {
+            top: 6vw;
+            object-fit: contain;
+            font-size: 2.5vw;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+
+        #circle:hover {
+            text-decoration: underline;
+            text-decoration-color: #212529;
+            background-color: white;
+            width: 30vw;
+            height: 30vw;
+            margin-left: -15vw;
+            margin-bottom: -15vw;
+            border-width: 1px;
+            border-color: #212529;
+            border-style: solid;
+        }
+
+
+        #circle:hover>#circleText {
+            color: #212529;
+            font-size: 3vw;
+            top: 8vw;
+        }
     </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 10;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a id="navLogoLink" class="navbar-brand" href="index.html">
+            <img id="navLogo" src="Images/Logos/Logo_Navbar_White.png" alt="White long logo">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Personality.html">Who am I?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Future.html">Future goals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CV.html">CV <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="Projects.html">
+                      Projects
+                    </a>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Tutoring.html" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutoring
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="Tutoring.html">Mathematics</a>
+                        <a class="dropdown-item" href="Tutoring.html">Computer Science</a>
+                        <a class="dropdown-item" href="Tutoring.html">Physics</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact me<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <a href="Future.html" class="parallelogram" id="yearsAhead">
-        <div class="imageContainer">
-            <img src="Images/IndexImages/Time.svg" alt="Clock and calendar">
-        </div>
         <div class="textContainer">
-            Where I see myself in 5 years
+            Future
         </div>
     </a><a href="CV.html" class="parallelogram" id="CV">
-        <div class="imageContainer">
-            <img src="Images/IndexImages/CV.svg" alt="Clock and calendar">
-        </div>
         <div class="textContainer">
-            CV / Résumé
+            CV
         </div>
     </a><a href="Projects.html" class="parallelogram" id="Projects">
-        <div class="imageContainer">
-            <img src="Images/IndexImages/Miner.svg" alt="Clock and calendar">
-        </div>
         <div class="textContainer">
             Projects
         </div>
     </a><a href="Tutoring.html" class="parallelogram" id="Tutoring">
-        <div class="imageContainer">
-            <img src="Images/IndexImages/Teach.svg" alt="Clock and calendar">
-        </div>
         <div class="textContainer">
             Tutoring
         </div>
     </a>
-    <a href="Personality.html" id="triangle-up">
+    <div id="bigCircle"></div>
+    <a href="Personality.html" id="circle">
+        <div class="textContainer" id="circleText">
+        Santiago Gomez Maqueo Anaya
+        </div>
     </a>
-    <a href="Personality.html" id="triangleContained">
-        Who am I?
-    </a>
+
+
+    <!-- Scripts and libraries imported -->
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

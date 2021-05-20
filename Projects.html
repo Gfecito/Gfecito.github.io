@@ -2,54 +2,315 @@
 <html lang="en">
 
 <head>
-    <title> Index </title>
+  <title> Projects </title>
+  <link rel="shortcut icon" type="image/png" href="Images/Logos/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Style -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="generalStyle.css">
+  <!-- W3 CSS-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif
+    }
 
-    <!-- Vue js -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    .col-5 h4 {
+      font-size: 55px;
+    }
+  </style>
+
+
+  <!-- Style -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="generalStyle.css">
+
+  <!-- Vue js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a id="navLogoLink" class="navbar-brand" href="index.html">
-            <img id="navLogo" src="Images/Logo_Navbar_White.png" alt="White long logo">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="Personality.html">Who am I?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="CV.html">CV <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active dropdown">
-              <a class="nav-link dropdown-toggle" href="Projects.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Projects
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="Projects.html">Bullet Projects</a>
-                <a class="dropdown-item" href="Projects.html">Long Projects</a>
-                <a class="dropdown-item" href="Projects.html">School Projects </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a id="navLogoLink" class="navbar-brand" href="index.html">
+      <img id="navLogo" src="Images/Logos/Logo_Navbar_White.png" alt="White long logo">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Personality.html">Who am I?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Future.html">Future goals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="CV.html">CV <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link " href="Projects.html">
+            Projects
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Tutoring.html" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Tutoring
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="Tutoring.html">Mathematics</a>
+            <a class="dropdown-item" href="Tutoring.html">Computer Science</a>
+            <a class="dropdown-item" href="Tutoring.html">Physics</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact me<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 
 
 
-    <!-- Scripts and libraries imported -->
-    <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <!-- Sphere -->
+  <div class="sphere">
+    <div class="sphereLine" style="animation-name: rotateLine1;">
+      <div class="row" style="position:relative; top: -2vw;">
+        <img src="Images/ProjectThumbnails/GrimThumbnail.png"
+          style="left: 4vw; animation-name: moveThumbnail1;" alt="GrimThumbnail">
+      </div>
+    </div>
+    <div class="sphereLine" style="animation-name: rotateLine2;">
+      <div class="row" style="position:relative; top: -2vw;">
+        <img src="Images/ProjectThumbnails/SolitaireThumbnail.png"
+          style="left: 7vw; animation-name: moveThumbnail2;" alt="SolitaireThumbnail">
+      </div>
+    </div>
+    <div class="sphereLine" style="animation-name: rotateLine3;">
+      <div class="row" style="position:relative; top: -2vw;">
+        <img src="Images/ProjectThumbnails/CounterThumbnail.png"
+          style="left: 10vw; animation-name: moveThumbnail3;" alt="CounterThumbnail">
+      </div>
+    </div>
+    <div class="sphereLine" style="animation-name: rotateLine4;">
+      <div class="row" style="position:relative; top: -2vw;">
+        <img src="Images/ProjectThumbnails/PersonalThumbnail.png"
+          style="left: 13vw; animation-name: moveThumbnail4;" alt="ThisSiteThumbnail">
+      </div>
+    </div>
+    <div class="sphereLine" style="transform: rotate(45deg);">
+      <div class="row" style="position:relative; top: -2vw;">
+        <img src="Images/ProjectThumbnails/ArchitectsThumbnail.png"
+          style="transform: rotate(-45deg); left: 4vw; animation-name: slideThumbnail1;" alt="ThisSiteThumbnail">
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Make it on hover expand, giga fancy -->
+  <div class="containerScroll" style="padding-top: 45vw;">
+    Thingy thingy description; expand on hover and do a one of the sphere dots:
+     line not rotate; move through line but change size and z-index
+    <!-- Project container -->
+    <div class="row" style="margin-bottom: 35px;">
+      <div class="col-1"></div>
+      <div class="col-5" style="color: white;">
+        <h4>This website</h4>
+        <p style="text-align: justify;">Personal website made with HTML, JavaScript, and CSS - including Bootstrap, W3 CSS and Vue.js <br>
+          Managed to host it for free so it ran me for $0 - perfect fit for my student budget.
+        </p>
+      </div>
+      <div class="col-5">
+        <img src="Images/ProjectThumbnails/PersonalThumbnail.png"
+          style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;" alt="ThisSiteThumbnail">
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <div class="projectSeparator"></div>
+
+    <!-- Project container -->
+    <div class="row" style="margin-bottom: 35px; margin-top: 15px;">
+      <div class="col-1"></div>
+      <div class="col-5" style="color: white;">
+        <h4>Cool Architects</h4>
+        <p style="text-align: justify;">Mock website made with wordpress to practice.<br>
+          While the writing is mostly humorous, it was useful to get familiarized with different wordpress functionalities and hosting. <br> <br>
+          I was also able to host it for free, but in exchange functionalities are very limited. A real site'd have a lot more leeway, specially for e-commerce or SEO. <br>
+          You can visit the website <a target="_blank"
+            href="https://architectbuildings.wordpress.com/">here</a>
+          <br>
+        </p>
+      </div>
+      <div class="col-5">
+        <img src="Images/ProjectThumbnails/ArchitectsThumbnail.png"
+          style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;" alt="GrimThumbnail">
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <div class="projectSeparator"></div>
+
+    <!-- Project container -->
+    <div class="row" style="margin-bottom: 35px; margin-top: 15px;">
+      <div class="col-1"></div>
+      <div class="col-5" style="color: white;">
+        <h4>Grim Reaper's site</h4>
+        <p style="text-align: justify;">School project for web design; the site is simple with just 3 pages:<br>
+          A welcome page, a CV page and a contact page. <br>
+          You can visit the website <a target="_blank"
+            href="https://www.webdepot.umontreal.ca/Usagers/ap13487/MonDepotPublic/projet2-diego_gonzalez_santiago_gomez/Home.html">here</a>
+          <br>
+          Warning: it <em>is</em> in <em>french</em>
+        </p>
+      </div>
+      <div class="col-5">
+        <img src="Images/ProjectThumbnails/GrimThumbnail.png"
+          style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;" alt="GrimThumbnail">
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <div class="projectSeparator"></div>
+
+    <!-- Project container -->
+    <div class="row" style="margin-bottom: 35px; margin-top: 15px;">
+      <div class="col-1"></div>
+      <div class="col-5" style="color: white;">
+        <h4>Adiction Solitaire</h4>
+        <p style="text-align: justify;">School project for procedural programming with python; its solitaire on your
+          browser:<br>
+          The program was made entirely with python; it made the html file on its own.<br> <br>
+          The professor restricted access to the code I gave in, but the experience stays. We built the board using
+          two matrices, which made our program particularly fast. It's the first good piece of code I made.
+        </p>
+      </div>
+      <div class="col-5">
+        <img src="Images/ProjectThumbnails/SolitaireThumbnail.png"
+          style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;" alt="Solitaire">
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <div class="projectSeparator"></div>
+
+    <!-- Project container -->
+    <div class="row" style="padding-bottom: 35px; margin-top: 15px;">
+      <div class="col-1"></div>
+      <div class="col-5" style="color: white;">
+        <h4>Simple interface</h4>
+        <p style="text-align: justify;">School project for object oriented programming with java; its a small
+          window:<br> <br>
+          Using JavaFX, we (2 people) made a fancy window with 2 counters: you can add and substract, divide and
+          multiply, undo and redo, and export a .txt file with all registered operations<br>
+          You can <a target="_blank"
+            href="https://docs.google.com/uc?export=download&id=1C0trEs0PgjXB1vcU6hALwtBdeMufHwef">download</a>
+          the .zip of the project (requires everything you usually need for coding Java and JavaFX to run)
+          or you can see it on <a target="_blank" href="https://github.com/Gfecito/JavaFX-Counter">Github</a> <br>
+          Warning: it <em>is</em> in <em>french</em>
+        </p>
+      </div>
+      <div class="col-5">
+        <img src="Images/ProjectThumbnails/CounterThumbnail.png"
+          style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;" alt="Fancy counter">
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <footer class="bg-dark text-left text-white" style="padding-top: 10px; padding-bottom: 10px;">
+    <!--Grid row-->
+    <div class="row">
+
+      <div class="col-1"></div>
+      <div class="col-10" style="text-align: center;">
+        <!--
+        <section class="mb-4">
+
+
+          <- Linkedin ->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fab fa-linkedin-in"></i></a>
+
+          <-- Github ->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fab fa-github"></i></a>
+        </section>
+      -->
+
+        <p>
+          This website was made with the following libraries <br> and was aided by the following sources:
+        </p>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <div class="row" style="text-align: center;">
+      <div class="col-2"></div>
+      <div class="col-4">
+        <h5 class="text-uppercase">Libraries</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/w3css/defaulT.asp" class="text-white">W3 CSS</a>
+          </li>
+          <li>
+            <a href="https://vuejs.org/" class="text-white">Vue.js</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--Grid column-->
+      <div class="col-4">
+        <h5 class="text-uppercase">Sources</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cv&stacked=h"
+              class="text-white">CV Template</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2"></div>
+
+    </div>
+    <!--Grid row-->
+    </section>
+  </footer>
+  <!-- Scripts and libraries imported -->
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
