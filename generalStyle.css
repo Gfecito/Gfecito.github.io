@@ -344,6 +344,7 @@ span {
     height: 300px;
     box-sizing: border-box;
     padding: 10px 1px 1px 1px;
+    margin-bottom: 5px;
 }
 
 .project{
