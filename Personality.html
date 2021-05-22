@@ -22,6 +22,10 @@
     h6 {
       font-family: "Roboto", sans-serif
     }
+
+    .containerScroll span{
+      font-size: 5.5vw;
+    }
   </style>
 
   <!-- Style -->
@@ -80,8 +84,44 @@
 
 
 
-  <div class="containerScroll" style="height:700px;">
-    
+  <div class="containerScroll">
+    <div class="pageDescription">
+      <h2>Welcome! My name is<br></h2>
+      <h1 style="margin: 5px auto 5px 20px; height: 8.5vw;">
+        <span style="font-size: 8vw; color: coral;">S</span>
+        <span onmouseover="orangeLetter(this)">a</span>
+        <span onmouseover="orangeLetter(this)">n</span>
+        <span onmouseover="orangeLetter(this)">t</span>
+        <span onmouseover="orangeLetter(this)">i</span>
+        <span onmouseover="orangeLetter(this)">a</span>
+        <span onmouseover="orangeLetter(this)">g</span>
+        <span onmouseover="orangeLetter(this)">o</span>
+        <script>
+          function orangeLetter(letter) {
+            letter.style = "font-size: 7vw; color: coral;";
+          }
+        </script>
+      </h1>
+      <h2 style="text-align: right; margin-top: 30px; margin-bottom: 5px;">and this is my site!</h2>
+      <p style="margin: 50px auto 20px 20px; text-indent: 10px;">
+        I'm currently an international student at the University of Montreal. 
+        Funnily enough, because of the pandemic I have yet to set foot on it, 
+        but I have already learned far more than I'd imagined.
+        Both in computer science and outside of it.
+        <br><br>
+        I love playing the electric guitar; 
+        reading - especially economics, psychology, sociology and history; 
+        I have some weird obsession with water and all its sports, even those I'm terrible at.
+        <br><br>
+        I also really like teaching sciences; 
+        I had the privilege to meet all kinds of people throughout my life and our different tastes,
+        talents, experience, backgrounds, handicaps and challenges have taught me more than I could ever repay.
+        The least I can do is make sure no-one dismisses STEM because of a mean teacher.
+      </p>
+    </div>
+    <div class="imgContainer" style="display: inline-block; box-sizing: border-box; width: 35%; height:100%; overflow: hidden; margin: auto;">
+      <img src="Images/S.svg" style="transform: rotate(15deg);" alt="bigS">
+    </div>
 
   </div>
 
@@ -140,7 +180,8 @@
 
         <ul class="list-unstyled mb-0">
           <li>
-            <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cv&stacked=h" class="text-white">CV Template</a>
+            <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cv&stacked=h"
+              class="text-white">CV Template</a>
           </li>
         </ul>
       </div>

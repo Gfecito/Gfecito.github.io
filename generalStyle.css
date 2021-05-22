@@ -1,56 +1,71 @@
-body{
+body {
     background-color: white;
     color: #212529;
 }
 
-
-.navbar-nav > li{
-    margin-left:5px;
-    margin-right:5px;
+span {
+    display: inline-flex;
 }
 
+.navbar-nav>li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
-#navLogoLink{
+#navLogoLink {
     max-width: 200px;
-    width:20vw;
+    width: 20vw;
 }
 
-
-#navLogo{
+#navLogo {
     max-width: 200px;
     width: 100%;
 }
 
-
-.containerScroll{
+.containerScroll {
     display: flexbox;
     flex-direction: column;
     margin-left: 25px;
     margin-right: 25px;
     padding: 25px 10px 0 10px;
     background-color: #212529;
+    color: white;
 }
 
+.pageDescription {
+    box-sizing: border-box;
+    width: 60%;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+}
 
-.projectSeparator{
+.imgContainer {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.projectSeparator {
     margin-left: 2.5%;
     width: 95%;
     height: 5px;
     background-color: white;
 }
 
-
-.sphere{
+.sphere {
     box-sizing: content-box;
-    width: 40vw;
-    height: 40vw;
-    position: absolute;
-    left: 30vw;
-    top: 26.5vw;
+    width: 30vw;
+    height: 30vw;
+    position: relative;
+    top: 10vw;
+    right: 10vw;
 }
 
-.sphereLine{
-    width: 40vw;
+.sphereLine {
+    width: 30vw;
     height: 0px;
     background-color: white;
     transform-origin: 20vw 2.5px;
@@ -60,106 +75,314 @@ body{
     animation-timing-function: linear;
 }
 
-.sphereContainer{
+.sphereContainer {
     width: 7.5vw;
     height: 7.5vw;
     margin: 0 auto;
     display: inline-block;
 }
 
-.sphereLine > .row > img{
+.sphereLine>.row>img {
     transform-origin: 0 0;
     position: relative;
-    box-sizing:border-box; 
-    width: 20%; 
+    box-sizing: border-box;
+    width: 20%;
+    max-height: 100px;
     border-radius: 15px;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-  @keyframes rotateLine1 {
-    0% {transform: rotate(0deg);}
-    25% {transform: rotate(90deg);}
-    50% {transform: rotate(180deg);}
-    75% {transform: rotate(270deg);}
-    100% {transform: rotate(360deg);}
-  }
+@keyframes rotateLine1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
-  @keyframes rotateLine2 {
-    0% {transform: rotate(450deg);}
-    25% {transform: rotate(360deg);}
-    50% {transform: rotate(270deg);}
-    75% {transform: rotate(180deg);}
-    100% {transform: rotate(90deg);}
-  }
+@keyframes rotateLine2 {
+    0% {
+        transform: rotate(450deg);
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(270deg);
+    }
+    75% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
 
-  @keyframes rotateLine3 {
-    0% {transform: rotate(180deg);}
-    50% {transform: rotate(360deg);}
-    100% {transform: rotate(540deg);}
-  }
+@keyframes rotateLine3 {
+    0% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(540deg);
+    }
+}
 
-  @keyframes rotateLine4 {
-    0% {transform: rotate(270deg);}
-    50% {transform: rotate(450deg);}
-    100% {transform: rotate(630deg);}
-  }
+@keyframes rotateLine4 {
+    0% {
+        transform: rotate(270deg);
+    }
+    50% {
+        transform: rotate(450deg);
+    }
+    100% {
+        transform: rotate(630deg);
+    }
+}
 
+@keyframes moveThumbnail1 {
+    0% {
+        transform: rotate(0deg);
+        width: 30%
+    }
+    12.5% {
+        transform: rotate(-90deg);
+        width: 27.5%
+    }
+    25% {
+        transform: rotate(-180deg);
+        width: 25.5%
+    }
+    37.5% {
+        transform: rotate(-270deg);
+        width: 22.5%
+    }
+    50% {
+        transform: rotate(-360deg);
+        width: 7.5%;
+    }
+    62.5% {
+        transform: rotate(-450deg);
+        width: 22.5%
+    }
+    75% {
+        transform: rotate(-540deg);
+        width: 25.5%;
+    }
+    87.5% {
+        transform: rotate(-630deg);
+        width: 27.5%
+    }
+    100% {
+        transform: rotate(-720deg);
+        width: 30%
+    }
+}
 
+@keyframes moveThumbnail2 {
+    0% {
+        transform: rotate(-90deg);
+        width: 5%;
+    }
+    12.5% {
+        transform: rotate(0deg);
+        width: 10%;
+    }
+    25% {
+        transform: rotate(90deg);
+        width: 12.5%
+    }
+    37.5% {
+        transform: rotate(180deg);
+        width: 15%;
+    }
+    50% {
+        transform: rotate(270deg);
+        width: 20%
+    }
+    62.5% {
+        transform: rotate(360deg);
+        width: 15%;
+    }
+    75% {
+        transform: rotate(450deg);
+        width: 12.5%
+    }
+    87.5% {
+        transform: rotate(540deg);
+        width: 10%;
+    }
+    100% {
+        transform: rotate(630deg);
+        width: 5%;
+    }
+}
 
-  @keyframes moveThumbnail1 {
-    0% {transform: rotate(0deg); width: 30%}
-    12.5% {transform: rotate(-90deg); width: 27.5%}
-    25% {transform: rotate(-180deg); width: 25.5%}
-    37.5% {transform: rotate(-270deg); width: 22.5%}
-    50% {transform: rotate(-360deg); width: 7.5%;}
-    62.5% {transform: rotate(-450deg); width: 22.5%}
-    75% {transform: rotate(-540deg); width: 25.5%;}
-    87.5% {transform: rotate(-630deg); width: 27.5%}
-    100% {transform: rotate(-720deg); width: 30%}
-  }
+@keyframes moveThumbnail3 {
+    0% {
+        transform: rotate(180deg);
+        width: 20%;
+    }
+    12.5% {
+        transform: rotate(90deg);
+        width: 17.5%;
+    }
+    25% {
+        transform: rotate(0deg);
+        width: 15%
+    }
+    37.5% {
+        transform: rotate(-90deg);
+        width: 12.5%;
+    }
+    50% {
+        transform: rotate(-180deg);
+        width: 7.5%
+    }
+    62.5% {
+        transform: rotate(-270deg);
+        width: 12.5%;
+    }
+    75% {
+        transform: rotate(-360deg);
+        width: 15%
+    }
+    87.5% {
+        transform: rotate(-450deg);
+        width: 17.5%;
+    }
+    100% {
+        transform: rotate(-540deg);
+        width: 20%;
+    }
+}
 
-  @keyframes moveThumbnail2 {
-    0% {transform: rotate(-90deg); width: 5%;}
-    12.5% {transform: rotate(0deg); width: 10%;}
-    25% {transform: rotate(90deg); width: 12.5%}
-    37.5% {transform: rotate(180deg); width: 15%;}
-    50% {transform: rotate(270deg); width: 20%}
-    62.5% {transform: rotate(360deg); width: 15%;}
-    75% {transform: rotate(450deg); width: 12.5%}
-    87.5% {transform: rotate(540deg); width: 10%;}
-    100% {transform: rotate(630deg); width: 5%;}
-  }
+@keyframes moveThumbnail4 {
+    0% {
+        transform: rotate(90deg);
+        width: 2.5%;
+    }
+    12.5% {
+        transform: rotate(0deg);
+        width: 5%;
+    }
+    25% {
+        transform: rotate(-90deg);
+        width: 7.5%
+    }
+    37.5% {
+        transform: rotate(-180deg);
+        width: 5%;
+    }
+    50% {
+        transform: rotate(-270deg);
+        width: 2.5%
+    }
+    62.5% {
+        transform: rotate(-360deg);
+        width: 5%;
+    }
+    75% {
+        transform: rotate(-450deg);
+        width: 7.5%
+    }
+    87.5% {
+        transform: rotate(-540deg);
+        width: 5%;
+    }
+    100% {
+        transform: rotate(-630deg);
+        width: 2.5%;
+    }
+}
 
-  @keyframes moveThumbnail3 {
-    0% {transform: rotate(180deg); width: 20%;}
-    12.5% {transform: rotate(90deg); width: 17.5%;}
-    25% {transform: rotate(0deg); width: 15%}
-    37.5% {transform: rotate(-90deg); width: 12.5%;}
-    50% {transform: rotate(-180deg); width: 7.5%}
-    62.5% {transform: rotate(-270deg); width: 12.5%;}
-    75% {transform: rotate(-360deg); width: 15%}
-    87.5% {transform: rotate(-450deg); width: 17.5%;}
-    100% {transform: rotate(-540deg); width: 20%;}
-  }
+@keyframes slideThumbnail1 {
+    0% {
+        left: 4vw;
+        width: 15%;
+    }
+    25% {
+        left: 19vw;
+        width: 2.5%;
+    }
+    50% {
+        left: 34vw;
+        width: 15%;
+    }
+    75% {
+        left: 19vw;
+        width: 22.5%;
+    }
+    100% {
+        left: 4vw;
+        width: 15%;
+    }
+}
 
-  @keyframes moveThumbnail4 {
-    0% {transform: rotate(90deg); width: 2.5%;}
-    12.5% {transform: rotate(0deg); width: 5%;}
-    25% {transform: rotate(-90deg); width: 7.5%}
-    37.5% {transform: rotate(-180deg); width: 5%;}
-    50% {transform: rotate(-270deg); width: 2.5%}
-    62.5% {transform: rotate(-360deg); width: 5%;}
-    75% {transform: rotate(-450deg); width: 7.5%}
-    87.5% {transform: rotate(-540deg); width: 5%;}
-    100% {transform: rotate(-630deg); width: 2.5%;}
-  }
+.projectSection{
+    width: 100%;
+    box-sizing: border-box;
+    display: flexbox;
+}
 
-  @keyframes slideThumbnail1 {
-    0% {left: 4vw ; width: 15%;}
-    25% {left: 19vw ; width: 2.5%;}
-    50% {left: 34vw ; width: 15%;}
-    75% {left: 19vw ; width: 22.5%;}
-    100% {left: 4vw ; width: 15%;}
-  }
+.projectRow{
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 10px 1px 1px 1px;
+}
+
+.project{
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    border: #1282A2;
+    border-width: 1px;
+    border-style: solid;
+    margin: 2px 0 0 0;
+    padding: 0;
+    background-color: white;
+}
+
+.project h3{
+    height: 20%;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1282A2;
+}
+
+.projectImage{
+    box-sizing: border-box;
+    width: 60%;
+    height: auto;
+    margin: 10% 20%;
+}
+
+.projectImage img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projectExpandedContainer{
+    height: 650px; 
+    width: 100%;
+    color: white;
+}

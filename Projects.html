@@ -23,8 +23,41 @@
       font-family: "Roboto", sans-serif
     }
 
+
+    .containerScroll span {
+      font-size: 8vw;
+      color: #1282A2;
+    }
+
+    span {
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+    }
+
     .col-5 h4 {
       font-size: 55px;
+    }
+
+    @keyframes powerLetters {
+      0% {
+        font-weight: lighter;
+        color: white;
+      }
+
+      5% {
+        font-weight: bolder;
+      }
+
+      10% {
+        font-weight: normal;
+        color: #1282A2;
+      }
+
+      100% {
+        font-weight: normal;
+        color: #1282A2;
+      }
     }
   </style>
 
@@ -82,156 +115,215 @@
   </nav>
 
 
-
-
-
-
-  <!-- Sphere -->
-  <div class="sphere">
-    <div class="sphereLine" style="animation-name: rotateLine1;">
-      <div class="row" style="position:relative; top: -2vw;">
-        <img src="Images/ProjectThumbnails/GrimThumbnail.png"
-          style="left: 4vw; animation-name: moveThumbnail1;" alt="GrimThumbnail">
-      </div>
-    </div>
-    <div class="sphereLine" style="animation-name: rotateLine2;">
-      <div class="row" style="position:relative; top: -2vw;">
-        <img src="Images/ProjectThumbnails/SolitaireThumbnail.png"
-          style="left: 7vw; animation-name: moveThumbnail2;" alt="SolitaireThumbnail">
-      </div>
-    </div>
-    <div class="sphereLine" style="animation-name: rotateLine3;">
-      <div class="row" style="position:relative; top: -2vw;">
-        <img src="Images/ProjectThumbnails/CounterThumbnail.png"
-          style="left: 10vw; animation-name: moveThumbnail3;" alt="CounterThumbnail">
-      </div>
-    </div>
-    <div class="sphereLine" style="animation-name: rotateLine4;">
-      <div class="row" style="position:relative; top: -2vw;">
-        <img src="Images/ProjectThumbnails/PersonalThumbnail.png"
-          style="left: 13vw; animation-name: moveThumbnail4;" alt="ThisSiteThumbnail">
-      </div>
-    </div>
-    <div class="sphereLine" style="transform: rotate(45deg);">
-      <div class="row" style="position:relative; top: -2vw;">
-        <img src="Images/ProjectThumbnails/ArchitectsThumbnail.png"
-          style="transform: rotate(-45deg); left: 4vw; animation-name: slideThumbnail1;" alt="ThisSiteThumbnail">
-      </div>
-    </div>
-  </div>
-
-  
   <!-- Make it on hover expand, giga fancy -->
-  <div class="containerScroll" style="padding-top: 45vw;">
-    Thingy thingy description; expand on hover and do a one of the sphere dots:
-     line not rotate; move through line but change size and z-index
-    <!-- Project container -->
-    <div class="row" style="margin-bottom: 35px;">
-      <div class="col-1"></div>
-      <div class="col-5" style="color: white;">
-        <h4>This website</h4>
-        <p style="text-align: justify;">Personal website made with HTML, JavaScript, and CSS - including Bootstrap, W3 CSS and Vue.js <br>
-          Managed to host it for free so it ran me for $0 - perfect fit for my student budget.
-        </p>
-      </div>
-      <div class="col-5">
-        <img src="Images/ProjectThumbnails/PersonalThumbnail.png"
-          style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;" alt="ThisSiteThumbnail">
-      </div>
-      <div class="col-1"></div>
+  <div class="containerScroll">
+    <div class="pageDescription">
+      <h1 style="margin: 5px auto 5px 20px; height: 8.5vw;">
+        <span style="animation-name: powerLetters; animation-delay: 0ms;">P</span>
+        <span style="animation-name: powerLetters; animation-delay: 40ms;">r</span>
+        <span style="animation-name: powerLetters; animation-delay: 80ms;">o</span>
+        <span style="animation-name: powerLetters; animation-delay: 120ms;">j</span>
+        <span style="animation-name: powerLetters; animation-delay: 160ms;">e</span>
+        <span style="animation-name: powerLetters; animation-delay: 200ms;">c</span>
+        <span style="animation-name: powerLetters; animation-delay: 240ms;">t</span>
+        <span style="animation-name: powerLetters; animation-delay: 280ms;">s</span>
+      </h1>
+      <p style="margin: 50px auto 20px 20px; text-indent: 10px;">
+        These are personal, academic or professional proyects that I've
+        found the most interesting or where I have learned the most so far.
+        <br><br>
+        A project below caught your eye? Hover it to read more about it!
+      </p>
     </div>
-
-    <div class="projectSeparator"></div>
-
-    <!-- Project container -->
-    <div class="row" style="margin-bottom: 35px; margin-top: 15px;">
-      <div class="col-1"></div>
-      <div class="col-5" style="color: white;">
-        <h4>Cool Architects</h4>
-        <p style="text-align: justify;">Mock website made with wordpress to practice.<br>
-          While the writing is mostly humorous, it was useful to get familiarized with different wordpress functionalities and hosting. <br> <br>
-          I was also able to host it for free, but in exchange functionalities are very limited. A real site'd have a lot more leeway, specially for e-commerce or SEO. <br>
-          You can visit the website <a target="_blank"
-            href="https://architectbuildings.wordpress.com/">here</a>
-          <br>
-        </p>
+    <div class="imgContainer" style="border-radius: 50%; background: linear-gradient(black, #212529)">
+      <!-- Sphere -->
+      <div class="sphere">
+        <div class="sphereLine" style="animation-name: rotateLine1;">
+          <div class="row" style="position:relative; top: -2vw;">
+            <img src="Images/ProjectThumbnails/GrimThumbnail.png" style="left: 4vw; animation-name: moveThumbnail1;"
+              alt="GrimThumbnail">
+          </div>
+        </div>
+        <div class="sphereLine" style="animation-name: rotateLine2;">
+          <div class="row" style="position:relative; top: -2vw;">
+            <img src="Images/ProjectThumbnails/SolitaireThumbnail.png"
+              style="left: 7vw; animation-name: moveThumbnail2;" alt="SolitaireThumbnail">
+          </div>
+        </div>
+        <div class="sphereLine" style="animation-name: rotateLine3;">
+          <div class="row" style="position:relative; top: -2vw;">
+            <img src="Images/ProjectThumbnails/CounterThumbnail.png" style="left: 10vw; animation-name: moveThumbnail3;"
+              alt="CounterThumbnail">
+          </div>
+        </div>
+        <div class="sphereLine" style="animation-name: rotateLine4;">
+          <div class="row" style="position:relative; top: -2vw;">
+            <img src="Images/ProjectThumbnails/PersonalThumbnail.png"
+              style="left: 13vw; animation-name: moveThumbnail4;" alt="ThisSiteThumbnail">
+          </div>
+        </div>
+        <div class="sphereLine" style="transform: rotate(45deg);">
+          <div class="row" style="position:relative; top: -2vw;">
+            <img src="Images/ProjectThumbnails/ArchitectsThumbnail.png"
+              style="transform: rotate(-45deg); left: 4vw; animation-name: slideThumbnail1;" alt="ThisSiteThumbnail">
+          </div>
+        </div>
       </div>
-      <div class="col-5">
-        <img src="Images/ProjectThumbnails/ArchitectsThumbnail.png"
-          style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;" alt="GrimThumbnail">
-      </div>
-      <div class="col-1"></div>
     </div>
-
-    <div class="projectSeparator"></div>
-
-    <!-- Project container -->
-    <div class="row" style="margin-bottom: 35px; margin-top: 15px;">
-      <div class="col-1"></div>
-      <div class="col-5" style="color: white;">
-        <h4>Grim Reaper's site</h4>
-        <p style="text-align: justify;">School project for web design; the site is simple with just 3 pages:<br>
-          A welcome page, a CV page and a contact page. <br>
-          You can visit the website <a target="_blank"
-            href="https://www.webdepot.umontreal.ca/Usagers/ap13487/MonDepotPublic/projet2-diego_gonzalez_santiago_gomez/Home.html">here</a>
-          <br>
-          Warning: it <em>is</em> in <em>french</em>
-        </p>
+    <div class="projectSection">
+      <div class="projectRow">
+        <div class="project thisProject" onmouseover="expandDescription(this)">
+          <h3>This Website</h3>
+          <div class="projectImage">
+            <img src="Images/ProjectThumbnails/PersonalThumbnail.png" alt="ThisSite">
+          </div>
+        </div><!-- Space anhilator: high tech
+        --><div class="project wordpressProject" onmouseover="expandDescription(this)">
+          <h3>Cool Architects</h3>
+          <div class="projectImage">
+            <img src="Images/ProjectThumbnails/ArchitectsThumbnail.png" alt="ArchitectMockup">
+          </div>
+        </div><!-- Space anhilator: high tech
+        --><div class="project webDesignProject" onmouseover="expandDescription(this)">
+          <h3>Grim Reaper's</h3>
+          <div class="projectImage">
+            <img src="Images/ProjectThumbnails/GrimThumbnail.png" alt="GrimThumbnail">
+          </div>
+        </div><!-- Space anhilator: high tech
+        --><div class="project solitaireProject" onmouseover="expandDescription(this)">
+          <h3>Online Solitaire</h3>
+          <div class="projectImage">
+            <img src="Images/ProjectThumbnails/SolitaireThumbnail.png" alt="Solitaire">
+          </div>
+        </div><!-- Space anhilator: high tech
+        --><div class="project javaFXProject" onmouseover="expandDescription(this)">
+          <h3>Counter Interface</h3>
+          <div class="projectImage">
+            <img src="Images/ProjectThumbnails/CounterThumbnail.png" alt="CounterThumbnail">
+          </div>
+        </div>
       </div>
-      <div class="col-5">
-        <img src="Images/ProjectThumbnails/GrimThumbnail.png"
-          style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;" alt="GrimThumbnail">
+
+      <script>
+        function expandDescription(project) {
+          var allProjectsExpanded = document.getElementsByClassName("projectExpanded");
+          for (var i = 0; i < allProjectsExpanded.length; i++) {
+            allProjectsExpanded[i].style = "visibility: hidden; margin-bottom: 0px; height: 0;";
+          }
+          allProjectsExpanded.style = "visibility: hidden; margin-bottom: 0px; height: 0;";
+          var projectName = project.classList[1];
+          var projectExpanded = document.getElementsByClassName(projectName)[1];
+          projectExpanded.style = "visibility: visible; padding: 35px 0; height: auto";
+        }
+      </script>
+
+
+
+      <div class="projectExpandedContainer">
+        <!-- Project container -->
+        <div class="row projectExpanded thisProject" style="visibility: hidden; margin-bottom: 0px; height: 0;">
+          <div class="col-1"></div>
+          <div class="col-5">
+            <h4>This website</h4>
+            <p style="text-align: justify;">Personal website made with HTML, JavaScript, and CSS - including Bootstrap,
+              W3
+              CSS and Vue.js <br>
+              Managed to host it for free so it ran me for $0 - perfect fit for my student budget.
+            </p>
+          </div>
+          <div class="col-5">
+            <img src="Images/ProjectThumbnails/PersonalThumbnail.png"
+              style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;"
+              alt="ThisSiteThumbnail">
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <!-- Project container -->
+        <div class="row projectExpanded wordpressProject" style="visibility: hidden; margin-bottom: 0px; height: 0;">
+          <div class="col-1"></div>
+          <div class="col-5" >
+            <h4>Cool Architects</h4>
+            <p style="text-align: justify;">Mock website made with wordpress to practice.<br>
+              While the writing is mostly humorous, it was useful to get familiarized with different wordpress
+              functionalities and hosting. <br> <br>
+              I was also able to host it for free, but in exchange functionalities are very limited. A real site'd have
+              a
+              lot more leeway, specially for e-commerce or SEO. <br>
+              You can visit the website <a target="_blank" href="https://architectbuildings.wordpress.com/">here</a>
+              <br>
+            </p>
+          </div>
+          <div class="col-5">
+            <img src="Images/ProjectThumbnails/ArchitectsThumbnail.png"
+              style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;"
+              alt="ThisSiteThumbnail">
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <!-- Project container -->
+        <div class="row projectExpanded webDesignProject" style="visibility: hidden; margin-bottom: 0px; height: 0;">
+          <div class="col-1"></div>
+          <div class="col-5" >
+            <h4>Grim Reaper's site</h4>
+            <p style="text-align: justify;">School project for web design; the site is simple with just 3 pages:<br>
+              A welcome page, a CV page and a contact page. <br>
+              You can visit the website <a target="_blank"
+                href="https://www.webdepot.umontreal.ca/Usagers/ap13487/MonDepotPublic/projet2-diego_gonzalez_santiago_gomez/Home.html">here</a>
+              <br>
+              Warning: it <em>is</em> in <em>french</em>
+            </p>
+          </div>
+          <div class="col-5">
+            <img src="Images/ProjectThumbnails/GrimThumbnail.png"
+              style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;"
+              alt="ThisSiteThumbnail">
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <!-- Project container -->
+        <div class="row projectExpanded solitaireProject" style="visibility: hidden; margin-bottom: 0px; height: 0;">
+          <div class="col-1"></div>
+          <div class="col-5" >
+            <h4>Adiction Solitaire</h4>
+            <p style="text-align: justify;">School project for procedural programming with python; its solitaire on your
+              browser:<br>
+              The program was made entirely with python; it made the html file on its own.<br> <br>
+              The professor restricted access to the code I gave in, but the experience stays. We built the board using
+              two matrices, which made our program particularly fast. It's the first good piece of code I made.
+            </p>
+          </div>
+          <div class="col-5">
+            <img src="Images/ProjectThumbnails/SolitaireThumbnail.png"
+              style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;"
+              alt="ThisSiteThumbnail">
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <!-- Project container -->
+        <div class="row projectExpanded javaFXProject" style="visibility: hidden; margin-bottom: 0px; height: 0;">
+          <div class="col-1"></div>
+          <div class="col-5" >
+            <h4>Simple interface</h4>
+            <p style="text-align: justify;">School project for object oriented programming with java; its a small
+              window:<br> <br>
+              Using JavaFX, we (2 people) made a fancy window with 2 counters: you can add and substract, divide and
+              multiply, undo and redo, and export a .txt file with all registered operations<br>
+              You can <a target="_blank"
+                href="https://docs.google.com/uc?export=download&id=1C0trEs0PgjXB1vcU6hALwtBdeMufHwef">download</a>
+              the .zip of the project (requires everything you usually need for coding Java and JavaFX to run)
+              or you can see it on <a target="_blank" href="https://github.com/Gfecito/JavaFX-Counter">Github</a> <br>
+              Warning: it <em>is</em> in <em>french</em>
+            </p>
+          </div>
+          <div class="col-5">
+            <img src="Images/ProjectThumbnails/CounterThumbnail.png"
+              style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;"
+              alt="ThisSiteThumbnail">
+          </div>
+          <div class="col-1"></div>
+        </div>
       </div>
-      <div class="col-1"></div>
     </div>
-
-    <div class="projectSeparator"></div>
-
-    <!-- Project container -->
-    <div class="row" style="margin-bottom: 35px; margin-top: 15px;">
-      <div class="col-1"></div>
-      <div class="col-5" style="color: white;">
-        <h4>Adiction Solitaire</h4>
-        <p style="text-align: justify;">School project for procedural programming with python; its solitaire on your
-          browser:<br>
-          The program was made entirely with python; it made the html file on its own.<br> <br>
-          The professor restricted access to the code I gave in, but the experience stays. We built the board using
-          two matrices, which made our program particularly fast. It's the first good piece of code I made.
-        </p>
-      </div>
-      <div class="col-5">
-        <img src="Images/ProjectThumbnails/SolitaireThumbnail.png"
-          style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;" alt="Solitaire">
-      </div>
-      <div class="col-1"></div>
-    </div>
-
-    <div class="projectSeparator"></div>
-
-    <!-- Project container -->
-    <div class="row" style="padding-bottom: 35px; margin-top: 15px;">
-      <div class="col-1"></div>
-      <div class="col-5" style="color: white;">
-        <h4>Simple interface</h4>
-        <p style="text-align: justify;">School project for object oriented programming with java; its a small
-          window:<br> <br>
-          Using JavaFX, we (2 people) made a fancy window with 2 counters: you can add and substract, divide and
-          multiply, undo and redo, and export a .txt file with all registered operations<br>
-          You can <a target="_blank"
-            href="https://docs.google.com/uc?export=download&id=1C0trEs0PgjXB1vcU6hALwtBdeMufHwef">download</a>
-          the .zip of the project (requires everything you usually need for coding Java and JavaFX to run)
-          or you can see it on <a target="_blank" href="https://github.com/Gfecito/JavaFX-Counter">Github</a> <br>
-          Warning: it <em>is</em> in <em>french</em>
-        </p>
-      </div>
-      <div class="col-5">
-        <img src="Images/ProjectThumbnails/CounterThumbnail.png"
-          style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;" alt="Fancy counter">
-      </div>
-      <div class="col-1"></div>
-    </div>
-
-
   </div>
 
 
