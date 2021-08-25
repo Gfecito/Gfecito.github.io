@@ -1,7 +1,0 @@
-Sources and libraries:
-
-Vue.js
-Bootstrap
-
-
-Kanstantsin Arlouski's sphere: https://stackoverflow.com/questions/45238194/how-can-i-create-pure-css-3-dimensional-spheres
