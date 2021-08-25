@@ -45,6 +45,7 @@ z .descriptionImage {
 .projectLeft{
     text-align: left;
     position: absolute;
+    left: 0;
     height: 500px;
     width: 100%;
     margin: 0;
@@ -57,6 +58,7 @@ z .descriptionImage {
 .projectRight{
     text-align: right;
     position: absolute;
+    left: 0;
     height: 500px;
     width: 100%;
     margin: 0;
