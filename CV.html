@@ -10,19 +10,8 @@
   <!-- W3 CSS-->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Roboto", sans-serif
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 
 <body class="w3-light-grey">
 
@@ -31,17 +20,16 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="generalStyle.css">
 
-  <!-- Vue js -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a id="navLogoLink" class="navbar-brand" href="index.html">
-          <img id="navLogo" src="Images/Logos/Logo_Navbar_White.png" alt="White long logo">
+        <img id="navLogo" src="Images/Logos/Logo_Navbar_White.png" alt="White long logo">
       </a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
@@ -49,8 +37,6 @@
             <a class="nav-link" href="Personality.html">Who am I?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Future.html">Future goals</a>
-          </li>
           <li class="nav-item active">
             <a class="nav-link" href="CV.html">CV <span class="sr-only">(current)</span></a>
           </li>
@@ -58,19 +44,6 @@
             <a class="nav-link " href="Projects.html">
               Projects
             </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="Tutoring.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Tutoring
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Tutoring.html">Mathematics</a>
-              <a class="dropdown-item" href="Tutoring.html">Computer Science</a>
-              <a class="dropdown-item" href="Tutoring.html">Physics</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Contact.html">Contact me<span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
@@ -80,7 +53,7 @@
 
 
 
-    <div class="w3-content" style="max-width:1400px; background-color: #212529; padding-top: 16px;">
+    <div class="w3-content" style="max-width: 1600px; background-color: #212529; padding-top: 16px;">
 
       <!-- The Grid -->
       <div class="w3-row-padding" style="background-color: #212529;">
@@ -88,25 +61,19 @@
         <!-- Left Column -->
         <div class="w3-third">
 
-          <div class="w3-white w3-text-grey w3-card-4">
-            <div class="w3-display-container">
-              <img src="Images/Photo_Holder.svg" style="height:100%; margin-bottom: 120px;" alt="Avatar">
-              <div class="w3-display-bottomleft w3-container w3-text-black">
-                <h2>(placeholder photo)<br>Santiago Gomez</h2>
-              </div>
-            </div>
-            <div class="w3-container" style="margin-top: 20px;">
+          <div class="w3-white w3-text-grey w3-card-4" style="border-radius: 5px;">
+            <div class="w3-container" style="padding-top: 20px;">
               <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer Science</p>
-              <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Ciudad de Mexico, Mexico</p>
-              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                <a href="Contact.html" style="text-decoration: none;">Contact me</a>
+              <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Montreal, Canada</p>
+              <p><i class="fa fa-user-plus fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                LinkedIn and Github in footer.
               </p>
               <hr>
 
               <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-              <p>Python (some experience with Pandas and Matplotlib)</p>
+              <p>Python (some experience with Pandas | Matplotlib | Flask | Tensorflow)</p>
               <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
               </div>
               <p>Java (some JavaFX)</p>
               <div class="w3-light-grey w3-round-xlarge w3-small">
@@ -120,7 +87,7 @@
               </div>
               <p>HTML/CSS</p>
               <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">95%</div>
               </div>
               <p>WordPress</p>
               <div class="w3-light-grey w3-round-xlarge w3-small">
@@ -164,78 +131,102 @@
         <!-- Right Column -->
         <div class="w3-twothird">
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container w3-card w3-white w3-margin-bottom" style="border-radius: 5px;">
             <h2 class="w3-text-grey w3-padding-16"><i
                 class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
             <div class="w3-container">
               <h5 class="w3-opacity"><b>None</b></h5>
-              
+
               <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2001 - <span
                   class="w3-tag w3-teal w3-round">Current</span></h6>
               <p>I do not have work experience.</p>
             </div>
-            <!--
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-              <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est
-                reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-              <hr>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-            </div>
-            -->
           </div>
-        
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
+
+          <div class="w3-container w3-card w3-white w3-margin-bottom" style="border-radius: 5px;">
             <h2 class="w3-text-grey w3-padding-16"><i
                 class="fa fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Achievements</h2>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b>Exemption Scholarship for international students | Échelon A</b></h5>
-              
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2020 - July 2023 (Expected)</h6>
-              <p>The biggest scholarship available for international students based on merit on admission at the University of Montreal</p>
-            <hr>
+              <h5 class="w3-opacity"><b>DIRO's excellence scholarship | For bachelors</b></h5>
+
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2021 - July 2023
+                (Expected)</h6>
+              <p>An excellence scholarship awarded to a few bachelor students by my department</p>
+              <hr>
             </div>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b>Prix aux Olympiades des Mathématiques régionales: Best team, Top 3 in the individual section</b></h5>
-              
+              <h5 class="w3-opacity"><b>Exemption Scholarship for international students | Échelon A</b></h5>
+
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2020 - July 2023
+                (Expected)</h6>
+              <p>The biggest scholarship available for international students based on merit on admission at the
+                University of Montreal</p>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>French regional math olympiads: Best team, Top 3 in the individual section</b>
+              </h5>
+
               <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 </h6>
-              <p>Organized by the Agency for french foreign teaching (AEFE); half of the challenge is done in teams, the other is done individually.
+              <p>Organized by the Agency for french foreign teaching (AEFE); half of the challenge is done in teams, the
+                other is done individually.
                 My region spanned from Mexico to Panama, and included all french teaching institutions there.
               </p>
             </div>
           </div>
 
-          <div class="w3-container w3-card w3-white">
+          <div class="w3-container w3-card w3-white w3-margin-bottom" style="border-radius: 5px;">
             <h2 class="w3-text-grey w3-padding-16"><i
-                class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Initiative and Research
+            </h2>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Lighthouse Labs 21 day data challenge</b></h5>
+
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>February 2020 - March 2020
+              </h6>
+              <p>A 21 day series of daily Data Analytics challenges using Python's Matplotlib and Pandas</p>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>AI Launchlab (Certified)</b></h5>
+
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2021</h6>
+              <p>
+                2 months of research and development of an implementation of Machine Learning <br>
+                We were taught theory and implementation with tensorflow/pytorch. I focused on tensorflow.
+              </p>
+            </div>
+          </div>
+
+          <div class="w3-container w3-card w3-white w3-margin-bottom" style="border-radius: 5px;">
+            <h2 class="w3-text-grey w3-padding-16"><i
+                class="fas fa-school fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
             <div class="w3-container">
               <h5 class="w3-opacity"><b>University of Montreal </b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2020 - July 2023 (Expected)</h6>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2020 - July 2023
+                (Expected)</h6>
               <p><b>Bachelor's in Computer Science</b><br>
-              Current average of 4.0 (A)</p>
+                Current average of 3.9 (A-)</p>
               <hr>
             </div>
             <div class="w3-container">
               <h5 class="w3-opacity"><b>Lycée Franco-Mexicain</b></h5>
               <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2020</h6>
-              <p><b>French Baccalaureat | Sciences, specialized in Engineering</b> <br> 
-              18.25/20 BAC | Equivalent to an International Baccalaureat's 7</p><br>
+              <p><b>French Baccalaureat | Sciences, specialized in Engineering</b> <br>
+                18.25/20 BAC | Equivalent to an International Baccalaureat's 7</p><br>
             </div>
           </div>
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container w3-card w3-white w3-margin-bottom" style="border-radius: 5px;">
             <h2 class="w3-text-grey w3-padding-16"><i
-                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Volunteering</h2>
+                class="fas fa-hands-helping fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Volunteering</h2>
             <div class="w3-container">
               <h5 class="w3-opacity"><b>TECHO</b></h5>
 
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2018: Early June - Late July</h6>
-              <p>Teaching english and mathematics to kids at Xochimilco, Mexico, in a community without access to a school</p>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2018: Early June - Late July
+              </h6>
+              <p>Teaching english and mathematics to kids at Xochimilco, Mexico, in a community without access to a
+                school</p>
             </div>
           </div>
 
@@ -260,19 +251,17 @@
 
         <div class="col-1"></div>
         <div class="col-10" style="text-align: center;">
-          <!--
           <section class="mb-4">
 
 
-            <- Linkedin ->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/santiago-gomez-maqueo-anaya/" role="button">
               <i class="fab fa-linkedin-in"></i></a>
 
-            <-- Github ->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/Gfecito" role="button">
               <i class="fab fa-github"></i></a>
           </section>
-        -->
+
 
           <p>
             This website was made with the following libraries <br> and was aided by the following sources:
@@ -288,13 +277,10 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>
+              <a target="_blank" href="https://getbootstrap.com/" class="text-white">Bootstrap</a>
             </li>
             <li>
-              <a href="https://www.w3schools.com/w3css/defaulT.asp" class="text-white">W3 CSS</a>
-            </li>
-            <li>
-              <a href="https://vuejs.org/" class="text-white">Vue.js</a>
+              <a target="_blank" href="https://www.w3schools.com/w3css/defaulT.asp" class="text-white">W3 CSS</a>
             </li>
           </ul>
         </div>
@@ -305,7 +291,8 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cv&stacked=h" class="text-white">CV Template</a>
+              <a target="_blank" href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cv&stacked=h"
+                class="text-white">CV Template</a>
             </li>
           </ul>
         </div>

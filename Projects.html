@@ -12,31 +12,44 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Roboto", sans-serif
+    .containerScroll {
+      overflow: hidden;
+      display: flex;
+      height: 3500px;
+      margin: auto;
+      padding: 25px 10px 0 10px;
+      background-color: #212529;
+      color: white;
+      max-width: 1600px;
     }
 
+    .containerScroll p {
+      position: relative;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 20px;
+    }
 
     .containerScroll span {
-      font-size: 8vw;
+      font-size: min(10.5vw, 260px);
       color: #1282A2;
     }
 
-    span {
-      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-      animation-duration: 20s;
-      animation-iteration-count: infinite;
+    .pageDescription {
+      background-color: #fff;
+      display: grid;
+      grid-template-rows: 80px 400px;
+      grid-template-columns: 100%;
+      height: 500px;
+      overflow: hidden;
+      margin: 0;
     }
 
-    .col-5 h4 {
-      font-size: 55px;
+    span {
+      animation-name: powerLetters;
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
     }
 
     @keyframes powerLetters {
@@ -86,9 +99,6 @@
           <a class="nav-link" href="Personality.html">Who am I?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Future.html">Future goals</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="CV.html">CV <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
@@ -96,231 +106,222 @@
             Projects
           </a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="Tutoring.html" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Tutoring
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="Tutoring.html">Mathematics</a>
-            <a class="dropdown-item" href="Tutoring.html">Computer Science</a>
-            <a class="dropdown-item" href="Tutoring.html">Physics</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Contact.html">Contact me<span class="sr-only">(current)</span></a>
-        </li>
       </ul>
     </div>
   </nav>
 
 
-  <!-- Make it on hover expand, giga fancy -->
-  <div class="containerScroll">
+  <!-- Title on right, paragraph on left, alternate colors use waves
+  Animate project sections with SIMPLE animations using css-->
+  <div class="containerScroll" style="padding: 0;">
     <div class="pageDescription">
-      <h1 style="margin: 5px auto 5px 20px; height: 8.5vw;">
-        <span style="animation-name: powerLetters; animation-delay: 0ms;">P</span>
-        <span style="animation-name: powerLetters; animation-delay: 40ms;">r</span>
-        <span style="animation-name: powerLetters; animation-delay: 80ms;">o</span>
-        <span style="animation-name: powerLetters; animation-delay: 120ms;">j</span>
-        <span style="animation-name: powerLetters; animation-delay: 160ms;">e</span>
-        <span style="animation-name: powerLetters; animation-delay: 200ms;">c</span>
-        <span style="animation-name: powerLetters; animation-delay: 240ms;">t</span>
-        <span style="animation-name: powerLetters; animation-delay: 280ms;">s</span>
-      </h1>
-      <p style="margin: 50px auto 20px 20px; text-indent: 10px;">
-        These are personal, academic or professional proyects that I've
-        found the most interesting or where I have learned the most so far.
-        <br><br>
-        A project below caught your eye? Hover it to read more about it!
-      </p>
-    </div>
-    <div class="imgContainer" style="border-radius: 50%; background: linear-gradient(black, #212529)">
-      <!-- Sphere -->
-      <div class="sphere">
-        <div class="sphereLine" style="animation-name: rotateLine1;">
-          <div class="row" style="position:relative; top: -2vw;">
-            <img src="Images/ProjectThumbnails/GrimThumbnail.png" style="left: 4vw; animation-name: moveThumbnail1;"
-              alt="GrimThumbnail">
-          </div>
-        </div>
-        <div class="sphereLine" style="animation-name: rotateLine2;">
-          <div class="row" style="position:relative; top: -2vw;">
-            <img src="Images/ProjectThumbnails/SolitaireThumbnail.png"
-              style="left: 7vw; animation-name: moveThumbnail2;" alt="SolitaireThumbnail">
-          </div>
-        </div>
-        <div class="sphereLine" style="animation-name: rotateLine3;">
-          <div class="row" style="position:relative; top: -2vw;">
-            <img src="Images/ProjectThumbnails/CounterThumbnail.png" style="left: 10vw; animation-name: moveThumbnail3;"
-              alt="CounterThumbnail">
-          </div>
-        </div>
-        <div class="sphereLine" style="animation-name: rotateLine4;">
-          <div class="row" style="position:relative; top: -2vw;">
-            <img src="Images/ProjectThumbnails/PersonalThumbnail.png"
-              style="left: 13vw; animation-name: moveThumbnail4;" alt="ThisSiteThumbnail">
-          </div>
-        </div>
-        <div class="sphereLine" style="transform: rotate(45deg);">
-          <div class="row" style="position:relative; top: -2vw;">
-            <img src="Images/ProjectThumbnails/ArchitectsThumbnail.png"
-              style="transform: rotate(-45deg); left: 4vw; animation-name: slideThumbnail1;" alt="ThisSiteThumbnail">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="projectSection">
-      <div class="projectRow">
-        <div class="project thisProject" onmouseover="expandDescription(this)">
-          <h3>This Website</h3>
-          <div class="projectImage">
-            <img src="Images/ProjectThumbnails/PersonalThumbnail.png" alt="ThisSite">
-          </div>
-        </div><!-- Space anhilator: high tech
-        --><div class="project wordpressProject" onmouseover="expandDescription(this)">
-          <h3>Cool Architects</h3>
-          <div class="projectImage">
-            <img src="Images/ProjectThumbnails/ArchitectsThumbnail.png" alt="ArchitectMockup">
-          </div>
-        </div><!-- Space anhilator: high tech
-        --><div class="project webDesignProject" onmouseover="expandDescription(this)">
-          <h3>Grim Reaper's</h3>
-          <div class="projectImage">
-            <img src="Images/ProjectThumbnails/GrimThumbnail.png" alt="GrimThumbnail">
-          </div>
-        </div><!-- Space anhilator: high tech
-        --><div class="project solitaireProject" onmouseover="expandDescription(this)">
-          <h3>Online Solitaire</h3>
-          <div class="projectImage">
-            <img src="Images/ProjectThumbnails/SolitaireThumbnail.png" alt="Solitaire">
-          </div>
-        </div><!-- Space anhilator: high tech
-        --><div class="project javaFXProject" onmouseover="expandDescription(this)">
-          <h3>Counter Interface</h3>
-          <div class="projectImage">
-            <img src="Images/ProjectThumbnails/CounterThumbnail.png" alt="CounterThumbnail">
-          </div>
-        </div>
+      <div class="descriptionText">
+        <h1 style="margin: auto; height: min(16.5vw,30px);">
+          <span style="animation-delay: 0s;">P</span>
+          <span style="animation-delay: 0.13s">r</span>
+          <span style="animation-delay: 0.26s">o</span>
+          <span style="animation-delay: 0.39s">j</span>
+          <span style="animation-delay: 0.52s">e</span>
+          <span style="animation-delay: 0.65s">c</span>
+          <span style="animation-delay: 0.78s">t</span>
+          <span style="animation-delay: 0.91s">s</span>
+        </h1>
       </div>
 
-      <script>
-        function expandDescription(project) {
-          var allProjectsExpanded = document.getElementsByClassName("projectExpanded");
-          for (var i = 0; i < allProjectsExpanded.length; i++) {
-            allProjectsExpanded[i].style = "visibility: hidden; margin-bottom: 0px; height: 0;";
+
+      <div class="descriptionText">
+        <h2 style="margin: 50px max(60px,20%); text-align: center; color: #212529;">
+          From Machine Learning and a webgame backend to web design and a JavaFX applet,
+          these are the projects that have taught me the most.
+        </h2>
+      </div>
+      <div class="wave1 ">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25" class="shape-fill"></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5" class="shape-fill"></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="projectLeft" id="oaye">
+      <div class="projectDescriptor">
+        <h3>Gesture recognition web application (Flask and tensorflow)</h3>
+        <p>Developed during a 2 month period with a team of 3. You can check it out <a style="color: orangered;" target="_blank" href="https://github.com/Gfecito/GestureRecon-app">here</a><br>
+          My teammates trained the model while I learned Flask and made a web application, front to back<br>
+          It remains unfinished, some animations are missing and files can't yet be uploaded, but I'll come back to it with more experience.</p>
+      </div>
+      <div class="projectDisplay">
+        <div class="mySlides slides2">
+          <img src="Images/ProjectThumbnails/AIThumbnail.png" alt="AI Thumbnail 1">
+        </div>
+        <div class="mySlides slides2">
+          <img src="Images/ProjectThumbnails/CHandThumbnail.png" alt="AI Thumbnail 2">
+        </div>
+        <div class="mySlides slides2">
+          <img src="Images/ProjectThumbnails/CThumbnail.png" alt="AI Thumbnail 3">
+        </div>
+        <div class="mySlides slides2">
+          <img src="Images/ProjectThumbnails/PalmThumbnail.png" alt="AI Thumbnail 4">
+        </div>
+        <script>
+          var slideIndex2 = 0;
+          showSlides2();
+
+          function showSlides2() {
+            var i;
+            var slides2 = document.getElementsByClassName("slides2");
+            for (i = 0; i < slides2.length; i++) {
+              slides2[i].style.display = "none";
+            }
+            slideIndex2++;
+            if (slideIndex2 > slides2.length) { slideIndex2 = 1 }
+            slides2[slideIndex2 - 1].style.display = "block";
+            setTimeout(showSlides2, 2500); // Change image every 2 seconds
           }
-          allProjectsExpanded.style = "visibility: hidden; margin-bottom: 0px; height: 0;";
-          var projectName = project.classList[1];
-          var projectExpanded = document.getElementsByClassName(projectName)[1];
-          projectExpanded.style = "visibility: visible; padding: 35px 0; height: auto";
-        }
-      </script>
+        </script>
+      </div>
+    </div>
+    <div class="wave2">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
 
+    <div class="projectRight" id="website">
+      <div class="projectDisplay">
+        <img src="Images/ProjectThumbnails/PersonalThumbnail.png" alt="Personal Thumbnail">
+      </div>
+      <div class="projectDescriptor">
+        <h3>This Website!</h3>
+        <p>Made with HTML, CSS, JS and a sprinkle of love</p>
+      </div>
 
+    </div>
 
-      <div class="projectExpandedContainer">
-        <!-- Project container -->
-        <div class="row projectExpanded thisProject" style="visibility: hidden; margin-bottom: 0px; height: 0;">
-          <div class="col-1"></div>
-          <div class="col-5">
-            <h4>This website</h4>
-            <p style="text-align: justify;">Personal website made from scratch with HTML, JavaScript, and CSS - including Bootstrap,
-              W3 CSS and Vue.js <br>
-              Managed to host it for free so it ran me for $0 - perfect fit for my student budget.
-            </p>
-          </div>
-          <div class="col-5">
-            <img src="Images/ProjectThumbnails/PersonalThumbnail.png"
-              style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;"
-              alt="ThisSiteThumbnail">
-          </div>
-          <div class="col-1"></div>
+    <div class="wave3">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill">
+        </path>
+      </svg>
+    </div>
+
+    <div class="projectLeft" id="counter">
+      <div class="projectDescriptor">
+        <h3>Simple user interface made with JavaFX and CSS</h3>
+        <p>School project for object oriented programming with java; its a small window:<br><br>
+
+          Using JavaFX, we (2 people) made a fancy window with 2 counters: you can add and substract, divide and
+          multiply, undo and redo, and export a .txt file with all registered operations <br>
+          You can 
+          <a target="_blank" href="https://docs.google.com/uc?export=download&amp;id=1C0trEs0PgjXB1vcU6hALwtBdeMufHwef">download</a>
+          the .zip of the project or you can see it on 
+          <a target="_blank" href="https://github.com/Gfecito/JavaFX-Counter">Github</a><br>
+          Warning: it is in french
+        </p>
+      </div>
+      <div class="projectDisplay">
+        <img src="Images/ProjectThumbnails/CounterThumbnail.png" alt="Counter App Thumbnail">
+      </div>
+    </div>
+
+    <div class="wave4">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <div class="projectRight" id="simulation">
+      <div class="projectDisplay">
+        <img src="Images/ProjectThumbnails/WildLionSimulator3D.jpeg" alt="Illustrative Image">
+      </div>
+      <div class="projectDescriptor">
+        <h3>OOP Environment simulation made with Java</h3>
+        <p>
+          <span style="color: black; animation: none; font-size: medium;">
+            <span style="color: red; animation: none; font-size: medium;">DISCLAIMER:</span> The image presented is not from the project (the project only prints to the terminal). <br>
+            It is merely illustrative and from a game called "Wild Lion Simulator 3D". </span><br>
+            Using objected oriented programming we made an environmental simulation program.
+            It read XML files describing animals or plants and simulated them for a certain amount of epochs: the way they interacted,
+            what they ate, their energy consumption, whether they died or reproduced, and so on.
+        </p>
+      </div>
+    </div>
+
+    <div class="wave5">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <div class="projectLeft" id="solitaire">
+      <div class="projectDescriptor">
+        <h3>Web based game; Solitaire</h3>
+        <p>School project for procedural programming with python; its solitaire on your browser:<br>
+          The program was made entirely with python; it made the html file on its own.<br>
+          Out of respect for the professor's intellectual property (the program's API) the code isn't publicly available
+        </p>
+      </div>
+      <div class="projectDisplay">
+        <img src="Images/ProjectThumbnails/SolitaireThumbnail.png" alt="Solitaire Thumbnail">
+      </div>
+    </div>
+
+    <div class="wave6">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25" class="shape-fill"></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5" class="shape-fill"></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <div class="projectRight" id="websites">
+      <div class="projectDisplay">
+        <div class="mySlides slides1">
+          <img src="Images/ProjectThumbnails/ArchitectsThumbnail.png" alt="Architects Thumbnail">
         </div>
-        <!-- Project container -->
-        <div class="row projectExpanded wordpressProject" style="visibility: hidden; margin-bottom: 0px; height: 0;">
-          <div class="col-1"></div>
-          <div class="col-5" >
-            <h4>Cool Architects</h4>
-            <p style="text-align: justify;">Mock website made with wordpress to practice.<br>
-              While the writing is mostly humorous, it was useful to get familiarized with different wordpress
-              functionalities and hosting. <br> <br>
-              I was also able to host it for free, but in exchange functionalities are very limited. A real site'd have
-              a
-              lot more leeway, specially for e-commerce or SEO. <br>
-              You can visit the website <a target="_blank" href="https://architectbuildings.wordpress.com/">here</a>
-              <br>
-            </p>
-          </div>
-          <div class="col-5">
-            <img src="Images/ProjectThumbnails/ArchitectsThumbnail.png"
-              style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;"
-              alt="ThisSiteThumbnail">
-          </div>
-          <div class="col-1"></div>
+        <div class="mySlides slides1">
+          <img src="Images/ProjectThumbnails/GrimThumbnail.png" alt="Grim Thumbnail">
         </div>
-        <!-- Project container -->
-        <div class="row projectExpanded webDesignProject" style="visibility: hidden; margin-bottom: 0px; height: 0;">
-          <div class="col-1"></div>
-          <div class="col-5" >
-            <h4>Grim Reaper's site</h4>
-            <p style="text-align: justify;">School project for web design; the site is simple with just 3 pages:<br>
-              A welcome page, a CV page and a contact page. <br>
-              You can visit the website <a target="_blank"
-                href="https://www.webdepot.umontreal.ca/Usagers/ap13487/MonDepotPublic/projet2-diego_gonzalez_santiago_gomez/Home.html">here</a>
-              <br>
-              Warning: it <em>is</em> in <em>french</em>
-            </p>
-          </div>
-          <div class="col-5">
-            <img src="Images/ProjectThumbnails/GrimThumbnail.png"
-              style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;"
-              alt="ThisSiteThumbnail">
-          </div>
-          <div class="col-1"></div>
-        </div>
-        <!-- Project container -->
-        <div class="row projectExpanded solitaireProject" style="visibility: hidden; margin-bottom: 0px; height: 0;">
-          <div class="col-1"></div>
-          <div class="col-5" >
-            <h4>Adiction Solitaire</h4>
-            <p style="text-align: justify;">School project for procedural programming with python; its solitaire on your
-              browser:<br>
-              The program was made entirely with python; it made the html file on its own.<br> <br>
-              The professor restricted access to the code I gave in, but the experience stays. We built the board using
-              two matrices, which made our program particularly fast. It's the first good piece of code I made.
-            </p>
-          </div>
-          <div class="col-5">
-            <img src="Images/ProjectThumbnails/SolitaireThumbnail.png"
-              style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;"
-              alt="ThisSiteThumbnail">
-          </div>
-          <div class="col-1"></div>
-        </div>
-        <!-- Project container -->
-        <div class="row projectExpanded javaFXProject" style="visibility: hidden; margin-bottom: 0px; height: 0;">
-          <div class="col-1"></div>
-          <div class="col-5" >
-            <h4>Simple interface</h4>
-            <p style="text-align: justify;">School project for object oriented programming with java; its a small
-              window:<br> <br>
-              Using JavaFX, we (2 people) made a fancy window with 2 counters: you can add and substract, divide and
-              multiply, undo and redo, and export a .txt file with all registered operations<br>
-              You can <a target="_blank"
-                href="https://docs.google.com/uc?export=download&id=1C0trEs0PgjXB1vcU6hALwtBdeMufHwef">download</a>
-              the .zip of the project (requires everything you usually need for coding Java and JavaFX to run)
-              or you can see it on <a target="_blank" href="https://github.com/Gfecito/JavaFX-Counter">Github</a> <br>
-              Warning: it <em>is</em> in <em>french</em>
-            </p>
-          </div>
-          <div class="col-5">
-            <img src="Images/ProjectThumbnails/CounterThumbnail.png"
-              style="box-sizing:border-box; width: 100%; margin: 5px 0 0 15px; border-radius: 15px;"
-              alt="ThisSiteThumbnail">
-          </div>
-          <div class="col-1"></div>
-        </div>
+        <script>
+          var slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slides1");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+          }
+        </script>
+
+      </div>
+      <div class="projectDescriptor">
+        <h3>A couple of websites I made, very basic.</h3>
+        <p>Not intended for commercial use. <br> <br>
+          You can find one (CSS, JS, JSON, HTML) <a target="_blank" href="https://www.webdepot.umontreal.ca/Usagers/ap13487/MonDepotPublic/projet2-diego_gonzalez_santiago_gomez/Home.html">here</a><br>
+          And the other one (WordPress) <a target="_blank" href="https://architectbuildings.wordpress.com/"> here </a> </p>
       </div>
     </div>
   </div>
@@ -335,19 +336,6 @@
 
       <div class="col-1"></div>
       <div class="col-10" style="text-align: center;">
-        <!--
-        <section class="mb-4">
-
-
-          <- Linkedin ->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-            <i class="fab fa-linkedin-in"></i></a>
-
-          <-- Github ->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-            <i class="fab fa-github"></i></a>
-        </section>
-      -->
 
         <p>
           This website was made with the following libraries <br> and was aided by the following sources:
@@ -363,13 +351,10 @@
 
         <ul class="list-unstyled mb-0">
           <li>
-            <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>
+            <a target="_blank" href="https://getbootstrap.com/" class="text-white">Bootstrap</a>
           </li>
           <li>
-            <a href="https://www.w3schools.com/w3css/defaulT.asp" class="text-white">W3 CSS</a>
-          </li>
-          <li>
-            <a href="https://vuejs.org/" class="text-white">Vue.js</a>
+            <a target="_blank" href="https://www.w3schools.com/w3css/defaulT.asp" class="text-white">W3 CSS</a>
           </li>
         </ul>
       </div>
@@ -380,7 +365,7 @@
 
         <ul class="list-unstyled mb-0">
           <li>
-            <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cv&stacked=h"
+            <a target="_blank" href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cv&stacked=h"
               class="text-white">CV Template</a>
           </li>
         </ul>
@@ -388,6 +373,8 @@
       <div class="col-2"></div>
 
     </div>
+    <!--Grid row-->
+    </section>
   </footer>
   <!-- Scripts and libraries imported -->
   <!-- Bootstrap -->

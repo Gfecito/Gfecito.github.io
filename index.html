@@ -24,10 +24,6 @@
             overflow: hidden;
         }
 
-        body{
-            background-color: #212529;
-        }
-
         .parallelogram {
             text-decoration: none;
             display: block;
@@ -37,7 +33,7 @@
             margin: 0;
             padding: 0;
             width: 50%;
-            height: 50%;
+            height: 100%;
             background: white;
             color: #212529;
 
@@ -47,25 +43,15 @@
         }
 
 
-        #yearsAhead {
-            left: 0;
-            top: 7vh;
-        }
 
         #CV {
             left: 0;
-            bottom: -46.5px;
         }
 
         #Projects {
             right: 0;
-            top: 7vh;
         }
 
-        #Tutoring {
-            right: 0;
-            bottom: -46.5px;
-        }
 
         .textContainer {
             position: relative;
@@ -89,30 +75,22 @@
             font-size: 3vw;
         }
 
-        #yearsAhead>.textContainer {
-            left: 0;
-            bottom: 10vw;
-        }
 
         #Projects>.textContainer {
             right: 0;
-            bottom: 10vw;
+            top: 5%;
         }
 
         #CV>.textContainer {
             left: 0;
-            top: 80px;
+            top: 5%;
         }
 
-        #Tutoring>.textContainer {
-            right: 0;
-            top: 80px;
-        }
 
 
         .parallelogram:hover {
             z-index: 2;
-            width: 55%;
+            width: 52%;
             color: white;
             background-color: #212529;
         }
@@ -200,9 +178,6 @@
                     <a class="nav-link" href="Personality.html">Who am I?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Future.html">Future goals</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="CV.html">CV <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -210,39 +185,18 @@
                       Projects
                     </a>
                   </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="Tutoring.html" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Tutoring
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="Tutoring.html">Mathematics</a>
-                        <a class="dropdown-item" href="Tutoring.html">Computer Science</a>
-                        <a class="dropdown-item" href="Tutoring.html">Physics</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Contact.html">Contact me<span class="sr-only">(current)</span></a>
-                </li>
             </ul>
         </div>
     </nav>
 
-    <a href="Future.html" class="parallelogram" id="yearsAhead">
-        <div class="textContainer">
-            Future
-        </div>
-    </a><a href="CV.html" class="parallelogram" id="CV">
+    <a href="CV.html" class="parallelogram" id="CV">
         <div class="textContainer">
             CV
         </div>
-    </a><a href="Projects.html" class="parallelogram" id="Projects">
+    </a>
+    <a href="Projects.html" class="parallelogram" id="Projects">
         <div class="textContainer">
             Projects
-        </div>
-    </a><a href="Tutoring.html" class="parallelogram" id="Tutoring">
-        <div class="textContainer">
-            Tutoring
         </div>
     </a>
     <div id="bigCircle"></div>
