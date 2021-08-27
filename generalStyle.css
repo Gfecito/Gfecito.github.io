@@ -1,4 +1,5 @@
 body {
+    overflow: hidden;
     background-color: white;
     color: #212529;
 }
@@ -299,6 +300,7 @@ z .descriptionImage {
     }
 
     .projectDescriptor {
+        margin: auto;
         height: 500px;
         padding-top: 40px;
         display: grid;
@@ -340,11 +342,11 @@ z .descriptionImage {
     }
 
     #counter>.projectDescriptor{
-        margin-top: -30px;
+        margin-top: -40px;
     }
 
     #counter>.projectDisplay{
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     #simulation {
@@ -369,7 +371,7 @@ z .descriptionImage {
     }
 
     #solitaire>.projectDescriptor{
-        margin-top: -100px;
+        margin-top: -120px;
     }
 
     #solitaire p{
