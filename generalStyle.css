@@ -327,7 +327,7 @@ z .descriptionImage {
     }
 
     #oaye>.projectDisplay{
-        margin-top: -70px;
+        margin-top: -10px;
     }
 
     #website {
@@ -340,7 +340,11 @@ z .descriptionImage {
     }
 
     #counter>.projectDescriptor{
-        margin-top: 0;
+        margin-top: -30px;
+    }
+
+    #counter>.projectDisplay{
+        margin-top: 20px;
     }
 
     #simulation {
@@ -351,7 +355,7 @@ z .descriptionImage {
     }
 
     #simulation>.projectDescriptor{
-        margin-top: 0;
+        margin-top: -40px;
     }
 
     #solitaire {
@@ -361,7 +365,7 @@ z .descriptionImage {
     }
 
     #solitaire>.projectDisplay{
-        margin-top: -120px;
+        margin-top: -100px;
     }
 
     #solitaire>.projectDescriptor{
@@ -383,7 +387,7 @@ z .descriptionImage {
     /*-------------------WAVES-----------------*/
     .wave1 {
         position: absolute;
-        top: 620px;
+        top: 610px;
         left: 0;
         width: 100%;
         overflow: hidden;
