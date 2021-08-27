@@ -342,11 +342,11 @@ z .descriptionImage {
     }
 
     #counter>.projectDescriptor{
-        margin-top: -40px;
+        margin-top: -60px;
     }
 
     #counter>.projectDisplay{
-        margin-top: 40px;
+        margin-top: 70px;
     }
 
     #simulation {
