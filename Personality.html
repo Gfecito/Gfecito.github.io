@@ -145,10 +145,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="generalStyle.css">
-
-
-  <!-- Vue js -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -233,7 +230,7 @@
         Some books I really enjoyed:
       </header>
       <div class="bookShelf">
-        <div class="bookRow">
+        <div class="bookRow" data-aos="fade-right">
           <div class="book" name="thinkingFastAndSlow" id="TFS"
             style="background-image: url(Images/BookCovers/thinkingFastAndSlow.jpg );">
 
@@ -257,7 +254,7 @@
         </div>
         <div class="shelf"></div>
 
-        <div class="bookRow">
+        <div class="bookRow" data-aos="fade-left">
           <div class="book" name="theJakartaMethod" id="TJM"
             style="background-image: url(Images/BookCovers/theJakartaMethod.jpg );">
 
@@ -280,7 +277,7 @@
           </div>
         </div>
         <div class="shelf"></div>
-        <div class="bookRow">
+        <div class="bookRow" data-aos="fade-right">
           <div class="book" name="anElegantDefense" id="EDF"
             style="background-image: url(Images/BookCovers/anElegantDefense.jpg );">
 
@@ -337,6 +334,9 @@
           <li>
             <a target="_blank" href="https://www.w3schools.com/w3css/defaulT.asp" class="text-white">W3 CSS</a>
           </li>
+          <li>
+            <a target="_blank" href="https://michalsnik.github.io/aos/" class="text-white">AOS</a>
+          </li>
         </ul>
       </div>
 
@@ -370,6 +370,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

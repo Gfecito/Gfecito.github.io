@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="generalStyle.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         html,
         body {
@@ -38,7 +40,7 @@
             color: #212529;
 
             border-width: 1px;
-            border-color: #212529;
+            border-color: white #212529;
             border-style: solid;
         }
 
@@ -182,27 +184,27 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="Projects.html">
-                      Projects
+                        Projects
                     </a>
-                  </li>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <a href="CV.html" class="parallelogram" id="CV">
+    <a href="CV.html" class="parallelogram" id="CV" data-aos="fade-down">
         <div class="textContainer">
             CV
         </div>
     </a>
-    <a href="Projects.html" class="parallelogram" id="Projects">
+    <a href="Projects.html" class="parallelogram" id="Projects" data-aos="fade-up">
         <div class="textContainer">
             Projects
         </div>
     </a>
     <div id="bigCircle"></div>
-    <a href="Personality.html" id="circle">
+    <a href="Personality.html" id="circle" data-aos="zoom-in">
         <div class="textContainer" id="circleText">
-        Santiago Gomez Maqueo Anaya
+            Santiago Gomez Maqueo Anaya
         </div>
     </a>
 
@@ -218,6 +220,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
