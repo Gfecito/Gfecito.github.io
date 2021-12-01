@@ -1,0 +1,34 @@
+Templates:
+
+https://onepagelove.com/evan-stark
+
+
+
+
+
+Contents to have:
+
+Clear sections.
+Scope and impact.
+
+
+Styling:
+
+Intro: expanding paragraphs | running stickman gif with aseprite!!!
+Education: 2 cards
+Experience: 2 Alternating blocks with image and description
+Projects: window with tabs on bottom to change on click
+    Gesture recognition
+    Vaccination
+    Counter
+    Interpreters
+    Environment simulation
+Interests: window with tabs on top to change on click.
+    Ideally with 3d image inside each tab.
+Accolades: Slideshow
+
+
+Cool styling:
+
+Color inversion, complement colours are white-color on hexa?
+3D models inside cards?

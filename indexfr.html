@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome</title>
+    <link rel="shortcut icon" type="image/png" href="Images/Logos/S.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <!--Scripts, defer to load in proper order without blocking-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="scripts/smoothScroll.js" defer></script>
+    <script src="scripts/expandReduceFR.js" defer></script>
+    <script src="scripts/dataFR.js"></script>
+
+
+    <!--Animate on scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <nav id="nav" onmouseover="openNav(this)" onmouseout="closeNav(this)">
+        <a class="nav_element" href="index.html#introduction">I</a>
+        <a class="nav_element" href="index.html#education">II</a>
+        <a class="nav_element" href="index.html#experience">III</a>
+        <a class="nav_element" href="index.html#projects">IV</a>
+        <a class="nav_element" href="index.html#interests">V</a>
+        <a class="nav_element" href="index.html#accolades">VI</a>
+    </nav>
+    <main>
+        <header>
+            <img src="Images/Logos/earth.png" alt="planetEarth">
+            <a href="index.html">English</a>
+            <a href="indexfr.html">Français</a>
+            <a href="indexes.html">Español</a>
+        </header>
+        <section id="introduction">
+            <h1>if isPerson(<i>toi</i>) then:</h1>
+            <!--Reinitialize animate on scroll after every
+            expansion to ensure it works correctly-->
+            <p class="text_expanded">
+                <span class="expand_text hover_me" onmouseenter="expandP(0); AOS.init()">(Souris ici)</span>
+            </p>
+            <p class="text_expanded">
+                <span class="expand_text" onmouseenter="expandP(1); AOS.init()">Actuellement</span>
+            </p>
+            <p class="text_expanded">
+                <span class="expand_text" onmouseenter="expandP(2); AOS.init()">J'adore</span>
+            </p>
+            <p class="text_expanded">
+                <span class="expand_text" onmouseenter="expandP(3); AOS.init()">Enseigner</span>
+            </p>
+            <span class="expand_text" onmouseenter="expandLibrary(); AOS.init()" style="color: var(--metallic-blue)">Je
+                te dis ce je que lis</span>
+            <div id="library"></div>
+        </section>
+        <section id="education">
+            <h1>Bâtiments cerveau:</h1>
+            <div class="schools">
+                <div class="card">
+                    <img src="Images/InstitutionLogos/UdeM.jpeg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h2>Université de Montréal</h2>
+                        <h3>Baccalauréat Scientifique, Informatique</h3>
+                        <h4>Montreal | 2020-2023 (Attendu)</h4>
+                        <p>Moyenne actuelle de: 3.9/4.3 (A-)</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/InstitutionLogos/LFM.jpeg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h2>Lycée franco-mexicain</h2>
+                        <h3>Baccalauréat français, Sciences de l'ingénieur</h3>
+                        <h4>Mexico | 2017-2020</h4>
+                        <p>Mention très bien: TB (18.25/20)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <h1>public Experience job(Time temps){</h1>
+            <div id="jobs">
+                <div class="job" data-aos="fade-down-right">
+                    <img src="Images/Experience/Programming1.jpeg" alt="jobImage1">
+                    <div class="job_description">
+                        <h3>Introduction à la programmation - auxiliaire d'enseignement</h3>
+                        <p>
+                            Sous la supervision du professeur titulaire Marc Feeley et
+                            du maître de conférences Olivier Melançon, j'ai travaillé
+                            avec 7 autres auxiliaires pour enseigner et noter une
+                            classe de près de 300 sur les bases de la programmation
+                            - via python.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="job" data-aos="fade-up-left">
+                    <img src="Images/Experience/DiscreteStruct.jpeg" alt="jobImage1">
+                    <div class="job_description">
+                        <h3>Structures discrètes pour l'informatique - auxiliaire d'enseignement</h3>
+                        <p>
+                            Sous la supervision du professeur titulaire Miklós Csűrös,
+                            j'ai travaillé avec un étudiant à la maîtrise pour enseigner et noter une classe de 100 sur
+                            les structures discrètes des mathématiques que nous utilisons le plus couramment en tant
+                            qu'informaticiens.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h1>}</h1>
+        </section>
+        <section id="projects">
+            <h1>Projets:</h1>
+            <div id="projTab" class="tab">
+                <button id="defaultProject" class="projectLinks" onclick="openProject(event, 'gesture')">Reconnaissance
+                    gestuelle</button>
+                <button class="projectLinks" onclick="openProject(event, 'vaccine')">Gestion des vaccinations </button>
+                <button class="projectLinks" onclick="openProject(event, 'abacus')">Abaque du 21e siècle</button>
+                <button class="projectLinks" onclick="openProject(event, 'interpreters')">Interpréteurs</button>
+                <button class="projectLinks" onclick="openProject(event, 'simulation')">Simulation
+                    environnementale</button>
+                <button class="projectLinks" onclick="openProject(event, 'website')">Ce site!</button>
+            </div>
+            <div id="gesture" class="tabProjects tabcontent">
+                <div class="projectDescriptor">
+                    <h3>Application web de reconnaissance gestuelle (Flask et tensorflow)</h3>
+                    <p>Développé sur une période de 2 mois avec une équipe de 3. Vous pouvez le consulter
+                        <a target="_blank" href="https://github.com/Gfecito/GestureRecon-app">ici</a><br>
+                        Mes coéquipiers ont formé le modèle pendant que j'apprenais Flask et créais une application Web,
+                        d'avant en arrière<br>
+                        Il reste inachevé, certaines animations manquent et les fichiers ne peuvent pas encore être
+                        téléchargés, mais j'y reviendrai avec plus d'expérience.
+                    </p>
+                </div>
+                <div class="projectDisplay">
+                    <div class="mySlides slides2">
+                        <img src="Images/ProjectThumbnails/AIThumbnail.png" alt="AI Thumbnail 1">
+                    </div>
+                    <div class="mySlides slides2">
+                        <img src="Images/ProjectThumbnails/CHandThumbnail.png" alt="AI Thumbnail 2">
+                    </div>
+                    <div class="mySlides slides2">
+                        <img src="Images/ProjectThumbnails/CThumbnail.png" alt="AI Thumbnail 3">
+                    </div>
+                    <div class="mySlides slides2">
+                        <img src="Images/ProjectThumbnails/PalmThumbnail.png" alt="AI Thumbnail 4">
+                    </div>
+                </div>
+            </div>
+            <div id="vaccine" class="tabProjects tabcontent">
+                <div class="projectDescriptor">
+                    <h3>Système de gestion des vaccinations</h3>
+                    <p>
+                        Une application fonctionnelle développée avec Java qui comprend une interface graphique et un
+                        système de gestion de données.<br>
+                        J'ai participé à la planification et à la conception du projet et j'y ai écrit environ 95% des
+                        2000 lignes de code, plus la documentation.<br>
+                        Comme demandé par le personnel enseignant de cette classe, le code est privé.<br>
+                        Actuellement à sa dernière étape de développement.
+                    </p>
+                </div>
+                <div class="projectDisplay">
+                    <img src="Images/ProjectThumbnails/Vaccination.PNG" alt="Illustrative Image">
+                </div>
+            </div>
+            <div id="abacus" class="tabProjects tabcontent">
+                <div class="projectDescriptor">
+                    <h3>Compteurs</h3>
+                    <p>Projet d'école pour la programmation orientée objet avec java; c'est une petite fenêtre :<br><br>
+
+                        En utilisant JavaFX, nous (2 personnes) avons fait une fenêtre fantaisie avec 2 compteurs : vous
+                        pouvez additionner et soustraire, diviser et <br>
+                        multiplier, annuler et refaire, et exporter un fichier .txt avec toutes les opérations
+                        enregistrées
+                        <br>
+                        Vous pouvez
+                        <a target="_blank"
+                            href="https://docs.google.com/uc?export=download&amp;id=1C0trEs0PgjXB1vcU6hALwtBdeMufHwef">télécharger</a>
+                        le .zip du projet ou vous pouvez le voir sur
+                        <a target="_blank" href="https://github.com/Gfecito/JavaFX-Counter">Github</a><br>
+                        Warning: it is in french
+                    </p>
+                </div>
+                <div class="projectDisplay">
+                    <img src="Images/ProjectThumbnails/CounterThumbnail.png" alt="Counter App Thumbnail">
+                </div>
+            </div>
+            <div id="interpreters" class="tabProjects tabcontent">
+                <div class="projectDescriptor">
+                    <h3>Interpréteur pseudo-Lisp réalisé avec Haskell</h3>
+                    <p>
+                        Création de la section d'interprétation et d'évaluation d'un programme Haskell capable de lire
+                        et d'exécuter des fichiers à partir d'un langage inspiré de Lisp. A traité des fonctions,
+                        fermeture, environnements, variables, etc... toute l'enchilada.
+                    </p>
+                </div>
+                <div class="projectDescriptor">
+                    <h3>Interpréteur pseudo-Haskell réalisé avec Prolog</h3>
+                    <p>
+                        Même chose, mais cette fois c'était un langage inspiré de Haskell et utilisant Prolog pour la
+                        lecture et l'exécution.
+                        <br>
+                        Par respect pour le code du professeur qui a été compilé avant que notre interprète ne joue un
+                        quelconque rôle, le code est privé.
+                        <br>
+                        Actuellement à sa dernière étape de développement.
+                    </p>
+                </div>
+                <div class="projectDisplay">
+                    <img src="Images/ProjectThumbnails/interpreter.png" alt="Illustrative Image">
+                </div>
+            </div>
+            <div id="simulation" class="tabProjects tabcontent">
+                <div class="projectDisplay">
+                    <img src="Images/ProjectThumbnails/WildLionSimulator3D.jpeg" alt="Illustrative Image">
+                </div>
+                <div class="projectDescriptor">
+                    <h3>Simulation d'environnement réalisée avec Java</h3>
+                    <p>
+                        <span style="color: green; animation: none; font-size: medium;">
+                            <span style="color: red; animation: none; font-size: medium;">AVIS:</span>
+                            L'image présentée ne provient pas du projet (le projet ne s'imprime que sur le terminal).
+                            <br>
+                            C'est simplement illustratif et issu d'un jeu appelé "Wild Lion Simulator
+                            3D".</span><br><br>
+                        En utilisant la programmation orientée objet, nous avons réalisé un programme de simulation
+                        environnementale.
+                        <br>
+                        Il lisait des fichiers XML décrivant des animaux ou des plantes et les simulait pour un certain
+                        nombre d'époques : la façon dont ils interagissaient,
+                        <br>
+                        ce qu'ils ont mangé, leur consommation d'énergie, s'ils sont morts ou s'ils se sont reproduits,
+                        etc.
+                    </p>
+                </div>
+            </div>
+            <div id="website" class="tabProjects tabcontent">
+                <h3>Ce site internet!</h3>
+                <p>Fabriqué à partir de zéro avec <span class="language">html </span>, <span class="language">css
+                    </span>, <span class="language">javascript </span>, <span class="language">jquery </span> ainsi que
+                    la bibliothèque <a href="https://michalsnik.github.io/aos/" target="_blank">Animate on Scroll </a>.
+                    Et une
+                    <span style="color:#e4007c">pincée</span> d'amour!
+                </p>
+            </div>
+        </section>
+        <section id="interests">
+            <h1>let interets =</h1>
+            <div id="WebDev" class="tabInterests tabcontent">
+                <div class="interestDescription">
+                    <h3>Développement web</h3>
+                    <p>
+                        Je suis particulièrement intéressé par toutes les façons dont les ordinateurs communiquent entre
+                        eux et comment rendre cette expérience aussi conviviale que possible.
+                    </p>
+                </div>
+                <img src="Images/Interests/web.jpeg" alt="interestThumbnail">
+            </div>
+            <div id="Graphics" class="tabInterests tabcontent">
+                <div class="interestDescription">
+                    <h3>Infographie</h3>
+                    <p>
+                        Il y a juste quelque chose de si fascinant dans toutes les petites astuces mathématiques et
+                        psychologiques derrière la fabrication d'un écran 2D et d'une calculatrice sophistiquée pour
+                        faire croire à une personne qu'elle regarde un objet 3D. J'aime aussi me faire berner avec de
+                        jolis objets 3D inexistants moi-même.
+                        <br><br>
+                        En plus de cela, les GPU sont de loin le composant informatique qui se développe le plus
+                        rapidement de nos jours. J'aimerais vraiment mieux comprendre leur fonctionnement, exploiter
+                        tout leur potentiel.
+                    </p>
+                </div>
+                <img src="Images/Interests/graphics.png" alt="interestThumbnail">
+            </div>
+            <div id="GameDev" class="tabInterests tabcontent">
+                <div class="interestDescription">
+                    <h3>Développement de jeux vidéo</h3>
+                    <p>
+                        Une progression naturelle de mon intérêt pour le graphisme, ainsi que de mon amour de longue
+                        date pour les jeux - vidéo ou autre.
+                        <br><br>
+                        J'ai l'impression que le développement de jeux me permettrait d'être mon moi le plus créatif, et
+                        c'est quelqu'un que j'aimerais rencontrer.
+                    </p>
+                </div>
+                <img src="Images/Interests/game.png" alt="interestThumbnail">
+            </div>
+            <div id="Immunity" class="tabInterests tabcontent">
+                <div class="interestDescription">
+                    <h3>Immunité</h3>
+                    <p>
+                        Je m'intéresse principalement à la façon dont les cellules immunitaires communiquent et
+                        naviguent. J'ai le sentiment très fort qu'il y a de la place pour beaucoup plus d'informatique
+                        dans ce domaine, mais je n'ai pas encore compris comment.
+                    </p>
+                </div>
+                <img src="Images/Interests/immune.jpg" alt="interestThumbnail">
+            </div>
+            <div id="Robotics" class="tabInterests tabcontent">
+                <div class="interestDescription">
+                    <h3>Robotique </h3>
+                    <p>
+                        Ok, honnêtement, si vous ne pensez pas que les robots sont au moins un peu cool, nous ne pouvons
+                        pas être amis.
+                        <br><br>
+                        Plus sérieusement, la robotique semble être l'avenir des processus physiques et des
+                        manipulations, partout, de la médecine à la fabrication et au transport.
+                        <br>
+                        Cela semble assez cool.
+                    </p>
+                </div>
+                <img src="Images/Interests/robot.jpeg" alt="interestThumbnail">
+            </div>
+            <div id="Compilation" class="tabInterests tabcontent">
+                <div class="interestDescription">
+                    <h3>Compilation et systèmes d'exploitation</h3>
+                    <p>
+                        Surtout comment gérer un espace physique très limité et des conditions physiques défavorables
+                        pour le matériel.
+                        <br><br>
+                        Je suis intéressé de savoir comment nous pourrions programmer des ordinateurs qui n'ont pas le
+                        même luxe de stabilité et d'espace que nos ordinateurs normaux.
+                        <br>
+                        Comment pouvons-nous garantir un code de <strong>qualité et fiable</strong> dans ces
+                        environnements ?
+
+                    </p>
+                </div>
+                <img src="Images/Interests/os.png" alt="interestThumbnail">
+            </div>
+            <div id="interesTab" class="tab">
+                <button id="defaultInterest" class="interestLinks" onclick="openInterest(event, 'WebDev')">Réseaux et
+                    développement web</button>
+                <button class="interestLinks" onclick="openInterest(event, 'Graphics')">Infographie</button>
+                <button class="interestLinks" onclick="openInterest(event, 'GameDev')">Développement de jeux
+                    vidéo</button>
+                <button class="interestLinks" onclick="openInterest(event, 'Immunity')">Immunité</button>
+                <button class="interestLinks" onclick="openInterest(event, 'Robotics')">Robotique</button>
+                <button class="interestLinks" onclick="openInterest(event, 'Compilation')">Compilation et SE</button>
+            </div>
+        </section>
+        <section id="accolades">
+            <h1>Prix</h1>
+            <div class="textAlternator">
+                <p>
+                    <strong><i>December 2021: Bourse d’excellence DIRO </i></strong><br><br>
+                    Bourse d’excellence académique au département d’informatique.
+                </p>
+            </div>
+            <div class="textAlternator">
+                <p>
+                    <strong><i>August 2020: Bourse d'exemption UdeM pour étudiants internationaux </i></strong><br><br>
+                    La plus grande bourse pour le mérite académique offerte aux étudiants internationaux durant les
+                    études de baccalauréat à l’UdeM.
+                </p>
+            </div>
+            <div class="textAlternator">
+                <p>
+                    <strong><i>2019: Olympiades régionales de mathématiques au lycée : Meilleure équipe / Top 3
+                            individuellement </i></strong><br><br>
+
+                    Ma région s’étendait du Mexique au Panama, englobait tous les établissements d’enseignement
+                    français.
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        /*Slides from w3schools*/
+        var slideIndex2 = 0;
+        showSlides2();
+
+        function showSlides2() {
+            var i;
+            var slides2 = document.getElementsByClassName("slides2");
+            for (i = 0; i < slides2.length; i++) {
+                slides2[i].style.display = "none";
+            }
+            slideIndex2++;
+            if (slideIndex2 > slides2.length) { slideIndex2 = 1 }
+            slides2[slideIndex2 - 1].style.display = "block";
+            setTimeout(showSlides2, 4000); // Change image every 2 seconds
+        }
+
+
+        /*Text alternator, from me*/
+        var textIndex = 0;
+        alternateText();
+
+        function alternateText() {
+            var i;
+            var alternators = document.getElementsByClassName("textAlternator");
+            for (i = 0; i < alternators.length; i++) {
+                alternators[i].style.display = "none";
+            }
+            textIndex++;
+            if (textIndex > alternators.length) { textIndex = 1 }
+            console.log(alternators);
+            alternators[textIndex - 1].style.display = "block";
+            setTimeout(alternateText, 5000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>

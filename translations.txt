@@ -1,0 +1,357 @@
+FR:
+
+Salut! Je m'appelle Santiago et je suis né et j'ai grandi au Mexique, ma mère a eu ma sœur et moi le privilège d'aller dans des écoles chics et d'apprendre l'anglais. J'ai ensuite eu la chance d'apprendre le français dans un autre endroit - encore plus chic - et d'obtenir plusieurs bourses pour étudier ce que j'aime le plus dans la belle terre des érables du Canada.
+
+J'essaie de devenir fiable et compétent, de pouvoir redonner aux gens qui m'ont poussé vers l'avant.
+
+Je suis actuellement étudiante en deuxième année et aide-enseignante à l'Université de Montréal, au sein du Département d'informatique et de recherche opérationnelle (DIRO). Cela a été un peu étrange de commencer mes études pendant la pandémie, mais les défis uniques qui l'ont accompagné m'ont appris des choses auxquelles je ne m'attendais pas.
+
+J'adore jouer de la guitare électrique ; lecture - en particulier des sujets en dehors de mon domaine ; J'ai une obsession étrange pour l'eau et tous ses sports, spécialement ceux pour lesquels je suis nul. Comme ramer avec l'équipe de l'UdeM, c'est assez amusant de crier de manière synchrone avec une bande d'étrangers charismatiques tout en essayant désespérément de ne pas basculer.
+Gagner aussi - gagner est amusant et une bonne excuse pour crier encore plus.
+
+J'aime beaucoup enseigner et communiquer la science; J'ai rencontré toutes sortes de personnes tout au long de ma vie et nos différents goûts, talents, expériences, parcours, handicaps et défis m'ont appris plus que je ne pourrais jamais rembourser. J'ai l'impression qu'en enseignant, je paie juste un peu de cette dette.
+
+je te dirai ce que j'ai lu
+Tu peux dire qui je suis
+
+
+
+
+
+
+-----------------------------------------------------------------------------------
+
+
+Baccalauréat Scientifique, Informatique
+Baccalauréat français, Sciences de l'ingénieur
+
+
+
+
+
+-----------------------------------------------------------------------------------
+
+Introduction à la programmation - auxiliaire d'enseignement
+Sous la supervision du professeur titulaire Marc Feeley et du maître de conférences Olivier Melançon, j'ai travaillé aux côtés de 7 autres étudiants pour enseigner et noter une classe de près de 300 sur les bases de la programmation - via python.
+
+
+
+Structures discrètes pour l'informatique - auxiliaire d'enseignement
+Sous la supervision du professeur titulaire Miklós Csűrös, j'ai travaillé avec un étudiant à la maîtrise pour enseigner et noter une classe de 100 sur les structures discrètes des mathématiques que nous utilisons le plus couramment en tant qu'informaticiens.
+
+
+-----------------------------------------------------------------------------------
+
+Application web de reconnaissance gestuelle (Flask et tensorflow)
+Développé sur une période de 2 mois avec une équipe de 3. Vous pouvez le consulter ici
+Mes coéquipiers ont formé le modèle pendant que j'apprenais Flask et créais une application Web, d'avant en arrière
+Il reste inachevé, certaines animations manquent et les fichiers ne peuvent pas encore être téléchargés, mais j'y reviendrai avec plus d'expérience.
+
+
+
+Système de gestion des vaccinations
+Une application fonctionnelle développée avec Java qui comprend une interface graphique et un système de gestion de données.
+J'ai participé à la planification et à la conception du projet et j'y ai écrit environ 95% des 2000 lignes de code, plus la documentation.
+Comme demandé par le personnel enseignant de cette classe, le code est privé.
+Actuellement à sa dernière étape de développement.
+
+
+
+
+Compteurs
+Projet d'école pour la programmation orientée objet avec java; c'est une petite fenêtre :
+
+En utilisant JavaFX, nous (2 personnes) avons fait une fenêtre fantaisie avec 2 compteurs : vous pouvez additionner et soustraire, diviser et
+multiplier, annuler et refaire, et exporter un fichier .txt avec toutes les opérations enregistrées
+Vous pouvez télécharger le .zip du projet ou vous pouvez le voir sur Github
+
+
+
+
+
+
+
+
+Interpréteur pseudo-Lisp réalisé avec Haskell
+Création de la section d'interprétation et d'évaluation d'un programme Haskell capable de lire et d'exécuter des fichiers à partir d'un langage inspiré de Lisp. A traité des fonctions, fermeture, environnements, variables, etc... toute l'enchilada.
+
+Interpréteur pseudo-Haskell réalisé avec Prolog
+Même chose, mais cette fois c'était un langage inspiré de Haskell et utilisant Prolog pour la lecture et l'exécution.
+Par respect pour le code du professeur qui a été compilé avant que notre interprète ne joue un quelconque rôle, le code est privé.
+Actuellement à sa dernière étape de développement.
+
+
+
+
+=-=
+
+Simulation d'environnement réalisée avec Java
+AVIS DE NON-RESPONSABILITÉ : L'image présentée ne provient pas du projet (le projet ne s'imprime que sur le terminal).
+C'est simplement illustratif et issu d'un jeu appelé "Wild Lion Simulator 3D".
+
+En utilisant la programmation orientée objet, nous avons réalisé un programme de simulation environnementale.
+Il lisait des fichiers XML décrivant des animaux ou des plantes et les simulait pour un certain nombre d'époques : la façon dont ils interagissaient,
+ce qu'ils ont mangé, leur consommation d'énergie, s'ils sont morts ou s'ils se sont reproduits, etc.
+
+
+
+
+
+
+
+Ce site internet !
+Fabriqué à partir de zéro avec html , css , javascript , jquery ainsi que la bibliothèque Animate on Scroll. Et une pincée d'amour !
+
+
+
+
+-----------------------------------------------------------------------------------
+
+développement web
+Je suis particulièrement intéressé par toutes les façons dont les ordinateurs communiquent entre eux et comment rendre cette expérience aussi conviviale que possible.
+
+
+
+
+
+
+Infographie
+Il y a juste quelque chose de si fascinant dans toutes les petites astuces mathématiques et psychologiques derrière la fabrication d'un écran 2D et d'une calculatrice sophistiquée pour faire croire à une personne qu'elle regarde un objet 3D. J'aime aussi me faire berner avec de jolis objets 3D inexistants moi-même.
+
+En plus de cela, les GPU sont de loin le composant informatique qui se développe le plus rapidement de nos jours. J'aimerais vraiment mieux comprendre leur fonctionnement, exploiter tout leur potentiel.
+
+
+
+
+
+
+Développement de jeux vidéo
+Une progression naturelle de mon intérêt pour le graphisme, ainsi que de mon amour de longue date pour les jeux - vidéo ou autre.
+
+J'ai l'impression que le développement de jeux me permettrait d'être mon moi le plus créatif, et c'est quelqu'un que j'aimerais rencontrer.
+
+
+
+
+
+
+
+
+Immunité
+Je m'intéresse principalement à la façon dont les cellules immunitaires communiquent et naviguent. J'ai le sentiment très fort qu'il y a de la place pour beaucoup plus d'informatique dans ce domaine, mais je n'ai pas encore compris comment.
+
+
+
+
+
+
+
+
+Robotique
+Ok, honnêtement, si vous ne pensez pas que les robots sont au moins un peu cool, nous ne pouvons pas être amis.
+
+Plus sérieusement, la robotique semble être l'avenir des processus physiques et des manipulations, partout, de la médecine à la fabrication et au transport.
+Cela semble assez cool.
+
+
+
+
+
+
+Compilation et systèmes d'exploitation
+Surtout comment gérer un espace physique très limité et des conditions physiques défavorables pour le matériel.
+
+Je suis intéressé de savoir comment nous pourrions programmer des ordinateurs qui n'ont pas le même luxe de stabilité et d'espace que nos ordinateurs normaux.
+Comment pouvons-nous garantir un code de qualité et fiable dans ces environnements ?
+
+
+
+-----------------------------------------------------------------------------------
+
+Bourse d’excellence DIRO | Bourse d’excellence académique au département d’informatique.
+
+Bourse d’exemption | La plus grande bourse pour le mérite académique offerte aux étudiants internationaux durant les études de baccalauréat à l’UdeM.
+
+Olympiades régionales de mathématiques au lycée : Meilleure équipe / Top 3 individuellement | Ma région s’étendait du Mexique au Panama, englobait tous les établissements d’enseignement français.
+
+====================================================================================
+====================================================================================
+====================================================================================
+====================================================================================
+====================================================================================
+====================================================================================
+
+ES:
+
+
+¡Hola! Mi nombre es Santiago y nací y crecí en México, mi madre nos tuvo a mi hermana y a mí el privilegio de ir a escuelas elegantes y aprender inglés. Luego tuve la oportunidad de aprender francés en otro lugar, aún más chic, y de obtener varias becas para estudiar lo que más amo en la hermosa tierra de los arces de Canadá.
+
+Estoy tratando de ser confiable y estar informado, para poder retribuir a las personas que me empujaron hacia adelante.
+
+Actualmente soy estudiante de segundo año y asistente de docencia en la Universidad de Montreal, en el Departamento de Investigación de Operaciones y Ciencias de la Computación (DIRO). Fue un poco extraño comenzar mis estudios durante la pandemia, pero los desafíos únicos que vinieron con ella me enseñaron cosas que nunca esperé.
+
+Amo tocar la guitarra eléctrica; lectura, especialmente temas fuera de mi campo; Tengo una extraña obsesión con el agua y todos sus deportes, especialmente los que apesto. Al igual que remar con el equipo de la UdeM, es bastante divertido gritar sincrónicamente con un grupo de extraños carismáticos mientras intenta desesperadamente no volcarse.
+Ganar también: ganar es divertido y una gran excusa para gritar un poco más.
+
+Realmente disfruto enseñando y comunicando ciencia; He conocido a todo tipo de personas a lo largo de mi vida y nuestros diferentes gustos, talentos, experiencias, antecedentes, discapacidades y desafíos me han enseñado más de lo que podría devolver. Tengo la impresión de que con la enseñanza estoy pagando solo una pequeña parte de esta deuda.
+
+Te diré lo que leo
+Puedes decir quien soy
+
+
+
+
+
+
+-------------------------------------------------- ---------------------------------
+
+
+Bachillerato Científico, Informática
+Bachillerato francés, Ciencias de la ingeniería
+
+
+
+
+
+-------------------------------------------------- ---------------------------------
+
+Introducción a la programación - asistente de docencia
+Bajo la supervisión del profesor titular Marc Feeley y el conferencista Olivier Melançon, trabajé junto con otros 7 estudiantes para enseñar y calificar a una clase de casi 300 personas sobre los conceptos básicos de la programación, a través de Python.
+
+
+
+Estructuras discretas para la informática: asistente del profesor
+Bajo la supervisión del Profesor Titular Miklós Csűrös, trabajé con un estudiante de maestría para enseñar y calificar una clase de 100 sobre Estructuras Discretas en Matemáticas que usamos más comúnmente como informáticos.
+
+
+-------------------------------------------------- ---------------------------------
+
+
+
+
+Aplicación web de reconocimiento de gestos (Flask y tensorflow)
+Desarrollado durante un período de 2 meses con un equipo de 3. Puedes verlo aquí
+Mis compañeros de equipo entrenaron el modelo mientras yo aprendía Flask y creaba una aplicación web, de ida y vuelta
+Sigue sin terminar, faltan algunas animaciones y los archivos aún no se pueden descargar, pero volveré a esto con más experiencia.
+
+
+
+Sistema de gestión de vacunación
+Una aplicación funcional desarrollada con Java que incluye una interfaz gráfica y un sistema de gestión de datos.
+Estuve involucrado en la planificación y diseño del proyecto y escribí aproximadamente el 95% de las 2000 líneas de código para él, además de la documentación.
+Según lo solicitado por el profesorado de esta clase, el código es privado.
+Actualmente en su etapa final de desarrollo.
+
+
+
+
+Contadores
+Proyecto escolar de programación orientada a objetos con java; es una pequeña ventana:
+
+Usando JavaFX, nosotros (2 personas) hicimos una elegante ventana con 2 contadores: puedes sumar y restar, dividir y
+multiplicar, deshacer y rehacer, y exportar un archivo .txt con todas las operaciones guardadas
+Puedes descargar el .zip del proyecto o puedes verlo en Github
+
+
+
+
+
+
+
+
+Intérprete de pseudo-Lisp hecho con Haskell
+Creación de la sección de interpretación y evaluación de un programa Haskell capaz de leer y ejecutar archivos desde un lenguaje inspirado en Lisp. Se ha ocupado de funciones, cierre, ambientes, variables, etc ... toda la enchilada.
+
+Intérprete pseudo-Haskell hecho con Prolog
+Lo mismo, pero esta vez era un lenguaje inspirado en Haskell y usaba Prolog para leer y ejecutar.
+Por respeto al código del profesor que se compiló antes de que nuestro intérprete desempeñara algún papel, el código es privado.
+Actualmente en su etapa final de desarrollo.
+
+
+
+
+Simulación del entorno de programación orientada a objetos realizada con Java
+DESCARGO DE RESPONSABILIDAD: La imagen mostrada no es del proyecto (el proyecto solo se imprime en el terminal).
+Es simplemente ilustrativo y de un juego llamado "Wild Lion Simulator 3D".
+
+Utilizando programación orientada a objetos, realizamos un programa de simulación ambiental.
+Leía archivos XML que describían animales o plantas y los simulaba durante varias épocas: la forma en que interactuaban,
+qué comieron, su consumo de energía, si murieron o se reprodujeron, etc.
+
+
+
+
+
+
+
+¡Este sitio web!
+Hecho desde cero con html, css, javascript, jquery y la biblioteca Animate on Scroll. ¡Y una pizca de amor!
+
+
+
+
+-------------------------------------------------- ---------------------------------
+
+desarrollo web
+Estoy particularmente interesado en todas las formas en que las computadoras se comunican entre sí y en cómo hacer que esta experiencia sea lo más fácil de usar posible.
+
+
+
+
+
+
+Infografías
+Hay algo tan fascinante en todos los pequeños trucos matemáticos y psicológicos detrás de hacer una pantalla 2D y una calculadora elegante para hacer que una persona piense que está mirando un objeto 3D. También me gusta que me engañen con lindos objetos tridimensionales inexistentes.
+
+Además de eso, las GPU son, con mucho, el componente informático de más rápido crecimiento en estos días. Realmente me gustaría comprender mejor cómo funcionan, para explotar todo su potencial.
+
+
+
+
+
+
+Desarrollo de juegos
+Una progresión natural de mi interés por los gráficos, así como de mi amor de toda la vida por los juegos, el video y otros.
+
+Siento que el desarrollo de juegos me permitiría ser mi yo más creativo, y él es alguien a quien me encantaría conocer.
+
+
+
+
+
+
+
+
+Inmunidad
+Lo que más me interesa es cómo se comunican y navegan las células inmunitarias. Tengo la fuerte sensación de que hay espacio para mucho más TI en esta área, pero aún no he descubierto cómo.
+
+
+
+
+
+Robótica
+Bien, honestamente, si no crees que los robots son al menos un poco geniales, no podemos ser amigos.
+
+Más en serio, la robótica parece ser el futuro de los procesos físicos y las manipulaciones, en todas partes, desde la medicina hasta la fabricación y el transporte.
+Suena muy bien.
+
+
+
+
+
+
+Sistemas operativos y de compilación
+Sobre todo cómo gestionar un espacio físico muy limitado y unas condiciones físicas desfavorables para el material.
+
+Estoy interesado en cómo podríamos programar computadoras que no tienen el mismo lujo de estabilidad y espacio que nuestras computadoras normales.
+¿Cómo podemos garantizar un código confiable y de calidad en estos entornos?
+
+
+
+-------------------------------------------------- ---------------------------------
+
+Beca de Excelencia DIRO | Beca de Excelencia Académica en el Departamento de Informática.
+
+Beca de exención | La mayor beca por mérito académico disponible para estudiantes internacionales durante los estudios de grado en la UdeM.
+
+Olimpiadas Regionales de Matemáticas de Escuelas Secundarias: Mejor Equipo / Top 3 Individualmente | Mi región se extendía desde México hasta Panamá, abarcando todos los establecimientos educativos franceses.
