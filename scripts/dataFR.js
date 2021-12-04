@@ -1,8 +1,8 @@
 const p0 = `
 <span class="expand_text">Salut! Je m'appelle Santiago et je suis né et j'ai grandi au <span style="color: crimson; font-size: 1.25em">Mexique</span></span>, 
-ma mère a eu ma sœur et moi le privilège d'aller dans des écoles chics et d'apprendre 
+ma mère nous a donné à ma sœur et à moi le privilège d'aller dans des écoles chics et d'apprendre 
 l'anglais. J'ai ensuite eu la chance d'apprendre le français dans un autre endroit - 
-encore plus chic - et d'obtenir plusieurs bourses pour étudier ce que j'aime le plus 
+encore plus élégant - et d'obtenir plusieurs bourses pour étudier ce que j'aime le plus 
 dans la belle terre des érables du Canada.
 <br><br>
 J'essaie de devenir fiable et compétent, de pouvoir redonner aux gens qui m'ont poussé
@@ -10,14 +10,14 @@ vers l'avant.
 `;
 const p1 = `
 <span class="expand_text">Je suis actuellement</span> étudiant en deuxième année 
-et aide-enseignante à l'Université de Montréal, au sein du Département d'informatique 
-et de recherche opérationnelle (DIRO). Cela a été un peu étrange de commencer mes 
+et auxiliaire d'enseignement à l'Université de Montréal, au sein du Département d'informatique 
+et de recherche opérationnelle (DIRO). C'était un peu étrange de commencer mes 
 études pendant la pandémie, mais les défis uniques qui l'ont accompagné m'ont appris 
 des choses auxquelles je ne m'attendais pas.
 `;
 const p2 = `
 <span class="expand_text">J'adore</span> jouer de la guitare électrique ; 
-lecture - en particulier des sujets en dehors de mon domaine ; 
+la lecture - en particulier des sujets en dehors de mon domaine ; 
 J'ai une obsession étrange pour l'eau et tous ses sports, spécialement 
 ceux pour lesquels je suis nul. Comme ramer avec l'équipe de l'UdeM, 
 c'est assez amusant de crier de manière synchrone avec une bande d'étrangers 
@@ -25,12 +25,11 @@ charismatiques tout en essayant désespérément de ne pas basculer. <br>
 Gagner aussi - gagner c'est le fun et une bonne excuse pour hurler encore plus.
 `;
 const p3 = `
-<span class="expand_text">J'aime beaucoup enseigner</span> et communiquer la science;
+<span class="expand_text">J'aime beaucoup enseigner</span> et communiquer la science.
 J'ai rencontré toutes sortes de personnes tout au long de ma vie et nos différents
 goûts, talents, expériences, parcours, handicaps et défis m'ont appris plus que 
 je ne pourrais jamais rembourser. J'ai l'impression qu'en enseignant, je paie juste
 un peu de cette dette.
-
 `;
 
 const library = `
