@@ -1,0 +1,565 @@
+/*Navigation and variables*/
+:root {
+  /*Colours*/
+  --dark-gray: #0a141d;
+  --light-blue: #6D98BA;
+  --metallic-blue: #1282A2;
+  --jungle-green: #63C132;
+  font-size: 18px;
+}
+
+#root {
+  height: fit-content;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.App {
+  /*Colouring*/
+  background-color: white;
+  color: var(--dark-gray);
+  /*Separates nav from main*/
+  margin: 0;
+  display: flex;
+  overflow-x: hidden;
+  height: fit-content;
+}
+
+/*Navigation*/
+nav {
+  /*Display*/
+  min-width: 55px;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr) 4fr;
+  height: 100vh;
+  margin: 0 20px 0 0;
+  /*For proper collapse/expansion*/
+  overflow-x: hidden;
+  transition: 0.8s;
+  /*Stickiness and position on scroll*/
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  /*Style (Maybe just leave it white?)*/
+  background-color: inherit;
+}
+
+.nav_element {
+  /*Display*/
+  margin: 10px 0;
+  padding: 5px 10px;
+  text-decoration: solid;
+  color: orangered;
+  /*Expansion*/
+  transition: 0.6s;
+  font-size: 1.2em;
+}
+
+.nav_element:hover {
+  /*Display*/
+  color: pink;
+  font-size: 1.3em;
+  font-weight: bolder;
+  padding: 10px 15px;
+}
+
+/*Document content styling*/
+main {
+  padding: 10px 10px 10px 40px;
+  flex-grow: 1;
+  /*Colouring*/
+  color: inherit;
+  background-color: inherit;
+  /*Display*/
+  display: grid;
+  grid-template-rows: min-content repeat(6, minmax(min-content, max-content));
+}
+
+main a {
+  color: orangered;
+}
+
+section {
+  margin-bottom: 15vh;
+}
+
+h1 {
+  font-size: 2em;
+  color: orangered;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 3fr;
+  grid-template-rows: 1fr;
+  padding: 20px 20px 0 0;
+  text-align: center;
+}
+
+header>img {
+  height: 50px;
+}
+
+header>a, header>#dropdown_header {
+  color: var(--metallic-blue);
+  padding-top: 15px;
+  text-decoration: none;
+  font-size: 1.4em;
+  transition: 0.4s;
+}
+
+#dropdown_header {
+  color: aliceblue;
+}
+
+#dropdown_header_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: var(--metallic-blue);
+  padding-top: 15px;
+  text-decoration: none;
+  font-size: 1.4em;
+  transition: 0.4s;
+}
+
+#dropdown_header:hover {
+  background-color: white;
+}
+
+#dropdown_header:hover+#dropdown_header_content {
+  display: block;
+}
+
+header>a:hover {
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+
+/*Intro sections*/
+#introduction {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+#introduction h1 {
+  animation: enter 1.5s linear;
+}
+
+#intro-content {
+  animation: entered 1.5s ease-in;
+}
+
+.expand_text {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.hover_me {
+  animation: breathText 2s linear 0s infinite;
+}
+
+.good_reads {
+  color: var(--light-blue);
+}
+
+/*Library*/
+#library {
+  transition: 1s;
+  max-width: 100%;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 1rem;
+}
+
+.booksILike header {
+  font-size: 35px;
+  padding: 40px 40px 90px 40px;
+  text-decoration: underline;
+}
+
+.bookShelfs {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.bookShelf {
+  display: grid;
+  grid-template-rows: 220fr 25fr;
+  margin-bottom: 15px;
+}
+
+.bookRow {
+  width: min(100%, 900px);
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, min(20%, 180px));
+}
+
+.book {
+  width: min(95%, 160px);
+  background-size: cover;
+  margin: 0 auto;
+  height: 220px;
+}
+
+.shelf {
+  margin: 0 auto;
+  height: 25px;
+  width: min(100%, 900px);
+  background-color: #FFF;
+  box-shadow: 10px 10px 6px rgb(180, 179, 179);
+}
+
+.schools {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+@media only screen and (min-width: 770px) {
+  .schools {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.class-listing {
+  width: fit-content;
+  margin: auto;
+}
+
+@media only screen and (min-width: 770px) {
+  .class-listing ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.class-listing li {
+  width: 90%;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/*On cards, from w3schools: 
+https://www.w3schools.com/howto/howto_css_cards.asp*/
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 20px;
+}
+
+@media only screen and (min-width: 770px) {
+  .card {
+    margin: 0 20px 0 5px;
+  }
+}
+
+.awards>.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 0 5px 0 4px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+#experience {
+  display: grid;
+  grid-template-rows: 1fr 30fr;
+}
+
+#jobs {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.job {
+  margin: 30px 10px;
+}
+
+.job_description {
+  font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 770px) {
+  #experience {
+    grid-template-rows: 1fr 15fr;
+  }
+
+  .job {
+    grid-template-columns: 5fr 7fr;
+    display: grid;
+  }
+
+  .job_description {
+    font-size: 1.2rem;
+  }
+}
+
+/*Alternate*/
+.job:nth-child(2n+1) {
+  direction: rtl;
+}
+
+/*But without switching reading direction*/
+.job:nth-child(2n+1)>.job_description {
+  direction: ltr;
+}
+
+.job>img {
+  border-radius: 10%;
+}
+
+.job_description {
+  padding: 0 10px;
+  display: grid;
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+}
+
+.job_description>h3 {
+  font-size: 1.4em;
+}
+
+.job_description>p {
+  font-size: 1.1em;
+}
+
+.language {
+  color: var(--metallic-blue);
+}
+
+
+/* Style the tab */
+.tabs_and_content {
+  max-height: 100%;
+}
+
+.tabs {
+  overflow: hidden;
+  background-color: var(--light-blue);
+  width: max(fit-content, 100%);
+  height: fit-content;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+/*Tabs from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade*/
+/* Style the buttons inside the tab */
+.tabs button {
+  font-weight: bold;
+  color: white;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  background-color: coral;
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+  background-color: orangered;
+}
+
+/* Style the tab content */
+.content {
+  margin: 0;
+  padding: 6px 12px;
+  background-color: var(--light-blue);
+  color: white;
+  height: max(min-content+10px, 100%);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.content * {
+  -webkit-animation: fadeEffect 0.8s;
+  animation: fadeEffect 0.8s;
+}
+
+.tabDisplay img {
+  display: block;
+  border-radius: 20px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 770px) {
+  .tabs_and_content {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr;
+  }
+
+  .tabs {
+    display: grid;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .content {
+    border-radius: 0px 10px 10px 10px;
+    margin-right: 10px;
+  }
+
+  .tabDisplay img {
+    max-width: 80%;
+    max-height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .tabs_and_content {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+/*Accolades*/
+#awards {
+  padding: 20px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 770px) {
+  #awards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.trophee {
+  width: max(40%, 20px);
+  margin: auto;
+}
+
+.award {
+  width: 85%;
+  text-align: center;
+  margin: 5%;
+  padding: 5% 2.5% 0 2.5%;
+}
+
+/*Animations*/
+@keyframes breathText {
+  0% {
+    font-size: 1.2em
+  }
+
+  50% {
+    font-size: 1.3em
+  }
+
+  100% {
+    font-size: 1.2em
+  }
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes textFade {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes enter {
+  0% {
+    background-color: inherit;
+    color: orangered;
+  }
+
+  30% {
+    background-color: inherit;
+    color: orangered;
+  }
+
+  41% {
+    background-color: orangered;
+    color: #FFF;
+  }
+
+  75% {
+    background-color: orangered;
+    color: #FFF;
+  }
+
+  80% {
+    background-color: inherit;
+    color: orangered;
+  }
+
+  100% {
+    background-color: inherit;
+    color: orangered;
+  }
+}
+
+@keyframes entered {
+  0% {
+    opacity: 0;
+    position: absolute;
+    left: -100000px;
+  }
+
+  50% {
+    opacity: 0;
+    position: absolute;
+    left: -100000px;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

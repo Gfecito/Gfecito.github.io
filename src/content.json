@@ -1,0 +1,270 @@
+{
+    "nav": {
+        "icon": "Images/Logos/earth.png",
+        "sections": [
+            "introduction",
+            "education",
+            "experience",
+            "projects",
+            "interests",
+            "accolades"
+        ],
+        "languages": [
+            "English",
+            "Français",
+            "Español"
+        ]
+    },
+    "introduction": {
+        "one_liners": [
+            "Hi! My name is Santiago and I was born and raised in Mexico",
+            "",
+            "I'm currently",
+            "I love",
+            "I really like teaching"
+        ],
+        "paragraphs": [
+            "my mother got my sister and I the privilege of going to fancy schools and learning english. I then got the chance of going on to learn french at another - even fancier - place, and getting several scholarships to study what I love most in the lovely maple land of Canada.",
+            "I'm trying to become reliable and competent, to be able to give back to the people that have pushed me forward.",
+            "a senior year student and teacher assistant at the University of Montreal, in the Department of Computer Science and Operational Research (DIRO). It's been a bit odd to start my career during the pandemic, but the unique challenges that came with that have taught me things I wouldn't have expected.",
+            "playing the guitar; reading - especially about social action and topics adjacent to the field I love most (don't tell anyone, but it's computer related); I have some weird obsession with water, its sports, particularily those I'm terrible at. Like rowing with the UdeM's team, it's pretty fun to scream synchronously with a bunch of charismatic strangers while desperately trying not to tip over.",
+            "and communicating science; I've met all kinds of people throughout my life and our different tastes, talents, experience, backgrounds, handicaps and challenges have taught me more than I could ever repay. I feel like by teaching, I pay back just a bit of that debt."
+        ],
+        "book_covers": [
+            "Images/BookCovers/anElegantDefense.jpg",
+            "Images/BookCovers/immune.jpeg",
+            "Images/BookCovers/gunsGermsAndSteel.jpg",
+            "Images/BookCovers/theJakartaMethod.jpg",
+            "Images/BookCovers/crimeAndPunishment.jpg",
+            "Images/BookCovers/manSearchForMeaning.jpg",
+            "Images/BookCovers/madameBovary.jpg",
+            "Images/BookCovers/aHundreadYearsOfSolitude.jpg",
+            "Images/BookCovers/theFeastOfTheGoat.jpg",
+            "Images/BookCovers/capital.jpeg",
+            "Images/BookCovers/theTyrannyOfMerit.jpg",
+            "Images/BookCovers/braidingSweetgrass.jpeg",
+            "Images/BookCovers/thinkingFastAndSlow.jpg",
+            "Images/BookCovers/1984.jpg",
+            "Images/BookCovers/braveNewWorld.jpg",
+            "Images/BookCovers/fahrenheit451.jpg",
+            "Images/BookCovers/hitchikersGuide.jpeg",
+            "Images/BookCovers/understandingPower.jpeg"
+        ]
+    },
+    "school": {
+        "descriptions": [
+            [
+                "Current average of 3.75/4.3 (A-)",
+                "Honors candidate",
+                "Consulting director at 180DC UdeM",
+                ""
+            ],
+            [
+                "Mention très bien: TB (18.25/20)",
+                "Founder and captain of the machine learning club",
+                "Member of the programming club"
+            ]
+        ],
+        "titles": [
+            "Université de Montréal",
+            "Lycée franco-mexicain"
+        ],
+        "images": [
+            "Images/InstitutionLogos/UdeM.jpeg",
+            "Images/InstitutionLogos/LFM.jpeg"
+        ],
+        "degrees": [
+            "Bachelors of Science, Computer Science",
+            "French Baccalaureat, Engineering Science"
+        ],
+        "details": [
+            "Montreal | 2020-2023 (Expected)",
+            "Mexico | 2017-2020"
+        ],
+        "abreviations": [
+            "UdeM",
+            "LFM"
+        ],
+        "classes": [
+            "Beginner programming with Python",
+            "Multivariable calculus",
+            "Intro to digital systems",
+            "Web design and development",
+            "Probabilities and Statistics",
+            "Computer architecture",
+            "Intermediate Programming with Java",
+            "Intro to theoretical computer science",
+            "Software engineering",
+            "Programming language paradigms and concepts",
+            "Data structures",
+            "Operational research methods",
+            "Philosophy of sciences",
+            "Databases",
+            "Operating systems",
+            "Algorithms",
+            "Intro to genetics",
+            "(Current - Grad level) Computer vision",
+            "(Current - Grad level) Image processing",
+            "(Current) Bioinformatics",
+            "(Current) Foundations of Machine Learning"
+        ]
+    },
+    "work": {
+        "descriptions": [
+            "Implemented experimental features, documented and debugged on Ixiasoft's DITA CCMS web application for technical documentation. Mainly worked with Java, TypeScript, React (by itself and with Redux), and Apache. Also handled -to a lesser extent- Maven and CSS.",
+            "Under the supervision of titular professor Stefan Monnier I worked with another BSc student to teach and grade a class of 50 on the concepts and paradigms that programming languages mainly use/belong to - through Haskell, Lisp (mainly Elisp), Prolog, C and Java.",
+            "Under the supervision of titular professor Marc Feeley and lecturer Olivier Melançon I worked alongside 7 other students to teach and grade a class of almost 300 on the basics of programming - through python",
+            "Under the supervision of titular professor Miklós Csűrös I worked with a Masters student to teach and grade a class of 100 on the discrete structures from mathematics that we most commonly use as computer scientists.",
+            "Under the supervision of titular professor Miklós Csűrös I worked with a Masters student to teach and grade a class of 100 on the discrete structures from mathematics that we most commonly use as computer scientists."
+        ],
+        "titles": [
+            "Full Stack Developer - intern",
+            "Programming Languages and Paradigms - TA (teacher assistant)",
+            "Intro to programming - TA",
+            "Discrete structures for computer science - TA",
+            "Web development and design - TA"
+        ],
+        "images": [
+            "Images/Experience/fullstack.png",
+            "Images/Experience/Paradigms.png",
+            "Images/Experience/Programming1.png",
+            "Images/Experience/DiscreteStruct.png",
+            "Images/Experience/WebDev.png"
+        ]
+    },
+    "projects": {
+        "titles": [
+            "FAT32 file management system",
+            "Database",
+            "Gesture recognition web-application",
+            "Vaccination management",
+            "21st century abacus",
+            "Interpreters",
+            "Environnemental Simulation",
+            "This site!"
+        ],
+        "descriptions": [
+            [
+                "We implemented a 'File Allocation Table'-based storage management system using C for a 32bit Linux system.",
+                "In human talk: we built the file, and memory, management section of an operating system."
+            ],
+            [
+                "Planned then built a small database for a library",
+                "In the planning, we used formal methods for entity-relationship modelling, then relational modelling, relational algebra, request optimization and database normalization",
+                "For the implementation, we used SQL, Hibernate (Java) and Maven for compilation and delivery of the executable."
+            ],
+            [
+                "Partitioned and preprocessed a database, built and trained a convolutional neural network model, exported and then implemented it into a dynamic web platform.",
+                "I built the latter using Flask (Python) and Jinja"
+            ],
+            [
+                "A functioning app developped with Java that includes an interactive graphical interface and a data management system.",
+                "We went through the rigorous planning expected from engineers: planning, interviews, prioritization, use case definitions, analysis (risks, non-functional requirements, materials, constraints), modeling (VPP), design, prototyping, automatic testing (JUnit), team management and scheduling, and last (but not least) documentation (Javadoc)."
+            ],
+            [
+                "School project for object oriented programming with java; its a small window:",
+                "Using JavaFX, we (2 people) made a fancy window with 2 counters: you can add and subtract, divide and multiply, undo and redo. Every action performed in the app was temporarily saved, and as such the actions log was always available for exporting as a .txt file."
+            ],
+            [
+                "A Pseudo-Lisp interpreter made with Haskell: Built the interpretation and evaluation section of a Haskell program that could read and execute files from a Lisp inspired language. Dealt with functions, closure, environments, variables, recursion and recursive definitions, etc... the whole enchilada.",
+                "Then built a Pseudo-Haskell interpreter, where I used Prolog for interpreting and executing, same features as before, but with added type inference."
+            ],
+            [
+                "Using objected oriented programming we made an environmental simulation program.",
+                "It read XML files describing animals or plants and simulated them for a certain amount of epochs: the way they interacted, what they ate, their energy consumption, whether they died or reproduced, and so on."
+            ],
+            [
+                "Originally made from scratch with HTML, CSS, JavaScript, jQuery as well as the Animate on Scroll library.",
+                "Currently built with React, Typescript, JSON, CSS... and a sprinkle of love!"
+            ]
+        ],
+        "images": [
+            "Images/ProjectThumbnails/FAT32.jpeg",
+            "Images/ProjectThumbnails/Database.png",
+            "Images/ProjectThumbnails/GestureRecognition.gif",
+            "Images/ProjectThumbnails/Vaccination.png",
+            "Images/ProjectThumbnails/CounterThumbnail.png",
+            "Images/ProjectThumbnails/Interpreter.png",
+            "Images/ProjectThumbnails/WildLionSimulator3D.jpeg",
+            "Images/ProjectThumbnails/ThisSite.jpeg"
+        ]
+    },
+    "interests": {
+        "titles": [
+            "Medicine",
+            "Social action",
+            "AI",
+            "Web development",
+            "Game Development",
+            "Computer graphics",
+            "Robotics",
+            "Embedded systems"
+        ],
+        "descriptions": [
+            [
+                "From mathematical modelling and computational biology to drug discovery and immunology, I think there's a lot of opportunity to facilitate medical advancements taking advantage of our computing resources. And that potential is easily the most exciting prospect to me.",
+                "It's also only natural for me to be interested after Google DeepMind's breakthrough of protein structure prediction, and subsequent publication of their prediction database. As if the heavens were telling us: 'yes, it can be easier and faster. Yes, some of your illnesses could be cured following this example.'"
+            ],
+            [
+                "I care about other people, I'd like them to live dignified lives and to be able to enjoy themselves. It also seems obviously preferable to live surrounded with happy, healthy people -who can help, too- than otherwise.",
+                "I'm not sure if it's the most efficient approach. But who cares when you get to see the smile of someone who've you've helped, even if just for a bit?"
+            ],
+            [
+                "Now, I love algorithms as much as any other guy, but some problems are very hard to solve by traditional algorithms. And they happen to be almost trivial with these sophisticated (and too often obfuscated) statistical and probabilistic methods.",
+                "... and yeah I also like the self driving cars, the smart personal assistants and the AI artists.",
+                "In fact, all the images from the experience section, and those of Medicine, Social Action and AI in the interests section were generated by DALL-E! An Open AI image generation model; which, like the rest of their work, is excellent."
+            ],
+            [
+                "It was the future, its now the present.",
+                "Our capacity to properly network computational power, and to transfer information efficiently and accessibly is - to me - one of the greatest steps forward for democracy in history.",
+                "I'm also a huge nerd, so I like the maths and the technology behind it."
+            ],
+            [
+                "A natural progression from my interest in graphics, as well as my long-lived love for games - video or otherwise.",
+                "I feel like game development would let me be my most creative self, and that's someone I'd like to meet."
+            ],
+            [
+                "There's just something so fascinating about all the little math and psychology tricks behind making a 2D screen and a fancy calculator fool a person into thinking they're looking at a 3D object. I also like being fooled with pretty, non existant, 3D objects myself.",
+                "On top of that GPUs are by far the fastest developping computer component nowadays. I'd really like to better understand how they work, to exploit their full potential."
+            ],
+            [
+                "Ok honestly if you don't think robots are at least a little cool we can't be friends.",
+                "On a more serious note, robotics seems like the future of physical processes and manipulations, everywhere from medicine to manufacturing and transport.",
+                "How could I not be interested?!"
+            ],
+            [
+                "Specially how to deal with very limited physical space and adverse physical conditions for hardware.",
+                "I'm interested in knowing how we could program computers that don't get the same luxuries in stability and space as our normal computers.",
+                "How do we ensure maintainable, fast and reliable systems in these environments?"
+            ]
+        ],
+        "images": [
+            "Images/Interests/medicine.png",
+            "Images/Interests/social.png",
+            "Images/Interests/ai.png",
+            "Images/Interests/web.jpeg",
+            "Images/Interests/game.png",
+            "Images/Interests/graphics.png",
+            "Images/Interests/robot.jpeg",
+            "Images/Interests/os.png"
+        ]
+    },
+    "awards": {
+        "titles": [
+            "DIRO's excellence scholarship",
+            "Exemption Scholarship for international students",
+            "French regional math olympiads | Best team, Top 3 individual"
+        ],
+        "dates": [
+            "December 2021",
+            "August 2020",
+            "2019"
+        ],
+        "descriptions": [
+            "An excellence scholarship awarded to a few bachelor students by my department",
+            "Biggest merit-based scholarship for international students at the Université de Montréal",
+            "My region spanned from Mexico to Panama, and included all french teaching institutions there."
+        ],
+        "trophee": "Images/Logos/trophy.png"
+    }
+}
